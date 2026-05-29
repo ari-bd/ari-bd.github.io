@@ -1295,36 +1295,32 @@
         </div>
       </div>
 
-      <div class="contact-form-wrap reveal">
-        <form id="contactForm" class="contact-form" onsubmit="handleFormSubmit(event)">
-          <div class="form-row">
-            <div class="form-group"><label>Full Name</label><input type="text" placeholder="Your full name" required></div>
-            <div class="form-group"><label>Email Address</label><input type="email" placeholder="your@email.com" required></div>
+      <div class="contact-form-wrap contact-gform-wrap reveal">
+        <div class="gform-header">
+          <div class="gform-header-icon"><i class="fas fa-paper-plane"></i></div>
+          <div>
+            <h3 class="gform-title">Send Us a Message</h3>
+            <p class="gform-subtitle">We respond within 24–48 hours</p>
           </div>
-          <div class="form-group">
-            <label>Subject</label>
-            <div class="custom-select-wrap">
-              <div class="custom-select" id="subjectSelect">
-                <div class="cs-selected"><span>Research Consultation</span><i class="fas fa-chevron-down cs-arrow"></i></div>
-                <div class="cs-options">
-                  <div class="cs-option active">Research Consultation</div>
-                  <div class="cs-option">Program Enrollment</div>
-                  <div class="cs-option">Publication Support</div>
-                  <div class="cs-option">Collaboration</div>
-                  <div class="cs-option">General Inquiry</div>
-                </div>
-              </div>
-              <input type="hidden" name="subject" id="subjectHidden" value="Research Consultation">
-            </div>
-          </div>
-          <div class="form-group"><label>Message</label><textarea rows="5" placeholder="How can ARI help you?" required></textarea></div>
-          <button type="submit" class="btn-primary" style="width:100%">Send Message <i class="fas fa-paper-plane"></i></button>
-        </form>
-        <div id="formSuccess" class="form-success hidden">
-          <i class="fas fa-check-circle"></i>
-          <h3>Message Received!</h3>
-          <p>Thank you for reaching out. ARI will respond to <strong>research.ari.bd@gmail.com</strong> shortly.</p>
         </div>
+        <div class="gform-divider"></div>
+        <div class="gform-iframe-wrap">
+          <div class="gform-loader" id="gformLoader">
+            <div class="gform-spinner"></div>
+            <span>Loading form…</span>
+          </div>
+          <iframe
+            id="ariContactForm"
+            src="https://docs.google.com/forms/d/e/1FAIpQLSclvarFQwyUa6NtTWVNMZqGySdZJswVUdN-H-naEOLLxPuTYQ/viewform?embedded=true"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+            title="ARI Contact Form"
+            onload="document.getElementById('gformLoader').style.display='none';this.style.opacity='1'"
+            style="opacity:0;transition:opacity 0.4s ease"
+          >Loading…</iframe>
+        </div>
+        <p class="gform-fallback">Having trouble? Email us at <a href="mailto:research.ari.bd@gmail.com">research.ari.bd@gmail.com</a></p>
       </div>
     </div>
   </div>
