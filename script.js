@@ -279,8 +279,13 @@ const programSlugs = {
 
 function getPageFromPath(path) {
   if (!path || path === '/') return 'home';
-  const first = path.replace(/^\//, '').split('/')[0];
-  return _knownSegments.has(first) ? first : 'home';
+  // Check every segment in case site is served from a repo subfolder
+  // e.g. /ari-website/programs → segments = ['ari-website', 'programs']
+  const segments = path.replace(/^\//, '').split('/');
+  for (const seg of segments) {
+    if (_knownSegments.has(seg)) return seg;
+  }
+  return 'home';
 }
 
 function navigateTo(pageId, pushHistory = true) {
@@ -508,24 +513,22 @@ document.addEventListener('keydown', e => {
 // ========== INITIAL LOAD ==========
 document.addEventListener('DOMContentLoaded', () => {
   // GitHub Pages SPA redirect: 404.html sends unknown paths here as ?p=/programs
-  // Read it, restore the real URL, then show the right section.
-  let startPage = 'home';
+  // Works whether the site is at root (ari-bd.github.io) or a subpath (/repo-name/).
   const params = new URLSearchParams(location.search);
   const redirectedPath = params.get('p');
 
+  let startPage;
   if (redirectedPath) {
-    // Restore the real URL — strip the ?p= param
-    history.replaceState({ pageId: getPageFromPath(redirectedPath) }, '', redirectedPath);
+    // Came via 404 redirect — resolve page from the original path, then restore clean URL
     startPage = getPageFromPath(redirectedPath);
+    history.replaceState({ pageId: startPage }, '', pageRoutes[startPage] || '/');
   } else {
     startPage = getPageFromPath(location.pathname);
     history.replaceState({ pageId: startPage }, '', pageRoutes[startPage] || '/');
   }
 
-  const startEl  = document.getElementById(startPage);
-  if (startEl) startEl.classList.add('active');
-  const startNav = document.querySelector(`.nav-link[data-page="${startPage}"]`);
-  if (startNav) startNav.classList.add('active');
+  // Use navigateTo so nav highlights and reveal animations fire correctly
+  navigateTo(startPage, false);
 
   document.querySelectorAll('.nav-link').forEach((link, i) => {
     link.style.transitionDelay = `${i * 50}ms`;
