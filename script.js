@@ -183,13 +183,22 @@ if (founderModal) {
 }
 
 // ========== LOADER ==========
-window.addEventListener('load', () => {
-  setTimeout(() => {
-    const loader = document.getElementById('loader');
-    if (loader) loader.classList.add('hidden');
+function hideLoader() {
+  const loader = document.getElementById('loader');
+  if (loader && !loader.classList.contains('hidden')) {
+    loader.classList.add('hidden');
     initReveal();
-  }, 1800);
-});
+  }
+}
+
+// Normal path: hide after load + short animation
+window.addEventListener('load', () => setTimeout(hideLoader, 1800));
+
+// Fallback: force-hide after 4s no matter what (broken images, slow resources, etc.)
+setTimeout(hideLoader, 4000);
+
+// Also hide as soon as DOM is ready if load never fires
+document.addEventListener('DOMContentLoaded', () => setTimeout(hideLoader, 3000));
 
 // ========== CUSTOM CURSOR ==========
 const cursor = document.querySelector('.cursor');
