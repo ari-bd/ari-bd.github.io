@@ -20,9 +20,9 @@ const founderData = {
       { icon: 'fas fa-book', text: 'Knowledge Dissemination' }
     ],
     profiles: [
-      { type: 'linkedin', label: 'LinkedIn', icon: 'fab fa-linkedin-in', href: 'https://www.linkedin.com/in/' },
+      { type: 'linkedin', label: 'LinkedIn', icon: 'fab fa-linkedin-in', href: 'https://www.linkedin.com/in/rukonozzaman-rukon-a944b628b/' },
       { type: 'researchgate', label: 'ResearchGate', icon: 'rg', href: 'https://www.researchgate.net/' },
-      { type: 'email', label: 'Email', icon: 'fas fa-envelope', href: 'mailto:research.ari.bd@gmail.com' }
+      { type: 'email', label: 'Email', icon: 'fas fa-envelope', href: 'mailto:rukon.stat.jnu@gmail.com' }
     ]
   },
   ador: {
@@ -38,9 +38,8 @@ const founderData = {
       { icon: 'fas fa-graduation-cap', text: 'Curriculum Development' }
     ],
     profiles: [
-      { type: 'linkedin', label: 'LinkedIn', icon: 'fab fa-linkedin-in', href: 'https://www.linkedin.com/in/' },
       { type: 'researchgate', label: 'ResearchGate', icon: 'rg', href: 'https://www.researchgate.net/' },
-      { type: 'email', label: 'Email', icon: 'fas fa-envelope', href: 'mailto:research.ari.bd@gmail.com' }
+      { type: 'email', label: 'Email', icon: 'fas fa-envelope', href: 'mailto:adorhossain58@gmail.com' }
     ]
   },
   samrat: {
@@ -56,10 +55,10 @@ const founderData = {
       { icon: 'fas fa-chart-line', text: 'Quantitative Research' }
     ],
     profiles: [
-      { type: 'linkedin', label: 'LinkedIn', icon: 'fab fa-linkedin-in', href: 'https://www.linkedin.com/in/' },
+      { type: 'linkedin', label: 'LinkedIn', icon: 'fab fa-linkedin-in', href: 'https://www.linkedin.com/in/samrat-kumar-dev-sharma-b0a5a9212/' },
       { type: 'researchgate', label: 'ResearchGate', icon: 'rg', href: 'https://www.researchgate.net/' },
       { type: 'orcid', label: 'ORCID', icon: 'orcid', href: 'https://orcid.org/' },
-      { type: 'email', label: 'Email', icon: 'fas fa-envelope', href: 'mailto:research.ari.bd@gmail.com' }
+      { type: 'email', label: 'Email', icon: 'fas fa-envelope', href: 'mailto:samrat.sdev@gmail.com' }
     ]
   },
   futanta: {
@@ -75,9 +74,9 @@ const founderData = {
       { icon: 'fas fa-hands-helping', text: 'Diversity & Inclusion' }
     ],
     profiles: [
-      { type: 'linkedin', label: 'LinkedIn', icon: 'fab fa-linkedin-in', href: 'https://www.linkedin.com/in/' },
+      { type: 'linkedin', label: 'LinkedIn', icon: 'fab fa-linkedin-in', href: 'https://www.linkedin.com/in/futanta-chakma/' },
       { type: 'researchgate', label: 'ResearchGate', icon: 'rg', href: 'https://www.researchgate.net/' },
-      { type: 'email', label: 'Email', icon: 'fas fa-envelope', href: 'mailto:research.ari.bd@gmail.com' }
+      { type: 'email', label: 'Email', icon: 'fas fa-envelope', href: 'mailto:futanta.stat@gmail.com' }
     ]
   },
   mahmud: {
@@ -93,10 +92,10 @@ const founderData = {
       { icon: 'fas fa-scroll', text: 'Academic Publishing' }
     ],
     profiles: [
-      { type: 'linkedin', label: 'LinkedIn', icon: 'fab fa-linkedin-in', href: 'https://www.linkedin.com/in/' },
+      { type: 'linkedin', label: 'LinkedIn', icon: 'fab fa-linkedin-in', href: 'https://www.linkedin.com/in/mahmud-tanjid/' },
       { type: 'researchgate', label: 'ResearchGate', icon: 'rg', href: 'https://www.researchgate.net/' },
       { type: 'scholar', label: 'Google Scholar', icon: 'scholar', href: 'https://scholar.google.com/' },
-      { type: 'email', label: 'Email', icon: 'fas fa-envelope', href: 'mailto:research.ari.bd@gmail.com' }
+      { type: 'email', label: 'Email', icon: 'fas fa-envelope', href: 'mailto:mahmudtanjid645@gmail.com' }
     ]
   }
 };
@@ -279,12 +278,12 @@ const programSlugs = {
 
 function getPageFromPath(path) {
   if (!path || path === '/') return 'home';
-  // Check every segment in case site is served from a repo subfolder
-  // e.g. /ari-website/programs → segments = ['ari-website', 'programs']
   const segments = path.replace(/^\//, '').split('/');
   for (const seg of segments) {
     if (_knownSegments.has(seg)) return seg;
   }
+  return 'home';
+}
   return 'home';
 }
 
@@ -512,14 +511,11 @@ document.addEventListener('keydown', e => {
 
 // ========== INITIAL LOAD ==========
 document.addEventListener('DOMContentLoaded', () => {
-  // GitHub Pages SPA redirect: 404.html sends unknown paths here as ?p=/programs
-  // Works whether the site is at root (ari-bd.github.io) or a subpath (/repo-name/).
   const params = new URLSearchParams(location.search);
   const redirectedPath = params.get('p');
 
   let startPage;
   if (redirectedPath) {
-    // Came via 404 redirect — resolve page from the original path, then restore clean URL
     startPage = getPageFromPath(redirectedPath);
     history.replaceState({ pageId: startPage }, '', pageRoutes[startPage] || '/');
   } else {
@@ -527,7 +523,6 @@ document.addEventListener('DOMContentLoaded', () => {
     history.replaceState({ pageId: startPage }, '', pageRoutes[startPage] || '/');
   }
 
-  // Use navigateTo so nav highlights and reveal animations fire correctly
   navigateTo(startPage, false);
 
   document.querySelectorAll('.nav-link').forEach((link, i) => {
@@ -788,10 +783,10 @@ const projectData = {
     description: 'A multi-institutional study on research participation rates, barriers, and motivators among undergraduate students across Bangladesh.',
     methodology: ['Survey Design', 'Quantitative Analysis', 'Multi-institutional Sampling', 'SPSS Analysis', 'Descriptive Statistics'],
     researchers: [
-      { name: 'Md. Rukonuzzaman Rukon', role: 'Principal Investigator', linkedin: 'https://www.linkedin.com/in/' },
-      { name: 'Md. Ador Hossain', role: 'Co-Investigator', linkedin: 'https://www.linkedin.com/in/' },
-      { name: 'Futanta Chakma', role: 'Research Associate', linkedin: 'https://www.linkedin.com/in/' },
-      { name: 'Mahmud Hossain', role: 'Data Analyst', linkedin: 'https://www.linkedin.com/in/' }
+      { name: 'Md. Rukonuzzaman Rukon', role: 'Principal Investigator', linkedin: 'https://www.linkedin.com/in/rukonozzaman-rukon-a944b628b/' },
+      { name: 'Md. Ador Hossain', role: 'Co-Investigator', linkedin: '#' },
+      { name: 'Futanta Chakma', role: 'Research Associate', linkedin: 'https://www.linkedin.com/in/futanta-chakma/' },
+      { name: 'Mahmud Hossain', role: 'Data Analyst', linkedin: 'https://www.linkedin.com/in/mahmud-tanjid/' }
     ]
   },
   'digital-tools': {
@@ -802,8 +797,8 @@ const projectData = {
     description: 'Evaluating the adoption of digital research tools (Zotero, SPSS, R) among Bangladeshi academics and measuring effectiveness.',
     methodology: ['Mixed Methods', 'Pre/Post Assessment', 'Likert Scale Surveys', 'Regression Analysis', 'Interview Protocol'],
     researchers: [
-      { name: 'Samrat Kumar Dev Sharma', role: 'Principal Investigator', linkedin: 'https://www.linkedin.com/in/' },
-      { name: 'Md. Ador Hossain', role: 'Co-Investigator', linkedin: 'https://www.linkedin.com/in/' },
+      { name: 'Samrat Kumar Dev Sharma', role: 'Principal Investigator', linkedin: 'https://www.linkedin.com/in/samrat-kumar-dev-sharma-b0a5a9212/' },
+      { name: 'Md. Ador Hossain', role: 'Co-Investigator', linkedin: '#' },
       { name: 'Karim Al-Amin', role: 'Research Assistant', linkedin: 'https://www.linkedin.com/in/' }
     ]
   },
@@ -815,9 +810,9 @@ const projectData = {
     description: 'Assessment of evidence-based practice adoption among healthcare professionals in clinical and community health settings.',
     methodology: ['Clinical Observation', 'Structured Interviews', 'SPSS Analysis', 'Systematic Review', 'Purposive Sampling'],
     researchers: [
-      { name: 'Futanta Chakma', role: 'Principal Investigator', linkedin: 'https://www.linkedin.com/in/' },
-      { name: 'Mahmud Hossain', role: 'Co-Investigator', linkedin: 'https://www.linkedin.com/in/' },
-      { name: 'Md. Rukonuzzaman Rukon', role: 'Methodology Advisor', linkedin: 'https://www.linkedin.com/in/' },
+      { name: 'Futanta Chakma', role: 'Principal Investigator', linkedin: 'https://www.linkedin.com/in/futanta-chakma/' },
+      { name: 'Mahmud Hossain', role: 'Co-Investigator', linkedin: 'https://www.linkedin.com/in/mahmud-tanjid/' },
+      { name: 'Md. Rukonuzzaman Rukon', role: 'Methodology Advisor', linkedin: 'https://www.linkedin.com/in/rukonozzaman-rukon-a944b628b/' },
       { name: 'Nusrat Islam', role: 'Survey Design Lead', linkedin: 'https://www.linkedin.com/in/' },
       { name: 'Tasneem Ahmed', role: 'Data Collection', linkedin: 'https://www.linkedin.com/in/' }
     ]
@@ -830,8 +825,8 @@ const projectData = {
     description: 'A comprehensive survey study identifying key barriers to research engagement in Bangladeshi universities with actionable recommendations.',
     methodology: ['Probability Sampling', 'Structured Questionnaire', 'Factor Analysis', 'Thematic Analysis', 'SPSS'],
     researchers: [
-      { name: 'Md. Rukonuzzaman Rukon', role: 'Principal Investigator', linkedin: 'https://www.linkedin.com/in/' },
-      { name: 'Md. Ador Hossain', role: 'Co-Investigator', linkedin: 'https://www.linkedin.com/in/' },
+      { name: 'Md. Rukonuzzaman Rukon', role: 'Principal Investigator', linkedin: 'https://www.linkedin.com/in/rukonozzaman-rukon-a944b628b/' },
+      { name: 'Md. Ador Hossain', role: 'Co-Investigator', linkedin: '#' },
       { name: 'Sabbir Biswas', role: 'Field Coordinator', linkedin: 'https://www.linkedin.com/in/' },
       { name: 'Maliha Rahman', role: 'Documentation Lead', linkedin: 'https://www.linkedin.com/in/' }
     ]
@@ -844,8 +839,8 @@ const projectData = {
     description: 'Pilot program evaluating the impact of SPSS training on student research capacity and academic output quality.',
     methodology: ['Quasi-experimental Design', 'Pre-Post Testing', 'Control Group', 'SPSS Analysis', 'Competency Assessment'],
     researchers: [
-      { name: 'Samrat Kumar Dev Sharma', role: 'Principal Investigator', linkedin: 'https://www.linkedin.com/in/' },
-      { name: 'Md. Ador Hossain', role: 'Curriculum Lead', linkedin: 'https://www.linkedin.com/in/' },
+      { name: 'Samrat Kumar Dev Sharma', role: 'Principal Investigator', linkedin: 'https://www.linkedin.com/in/samrat-kumar-dev-sharma-b0a5a9212/' },
+      { name: 'Md. Ador Hossain', role: 'Curriculum Lead', linkedin: '#' },
       { name: 'Rafiqul Hasan', role: 'Content Development', linkedin: 'https://www.linkedin.com/in/' }
     ]
   },
@@ -858,7 +853,7 @@ const projectData = {
     methodology: ['Literature Review', 'User Testing', 'Workflow Analysis', 'Quantitative Survey', 'A/B Testing'],
     researchers: [
       { name: 'Samrat Kumar Dev Sharma', role: 'Lead Researcher', linkedin: 'https://www.linkedin.com/in/' },
-      { name: 'Mahmud Hossain', role: 'Co-Investigator', linkedin: 'https://www.linkedin.com/in/' }
+      { name: 'Mahmud Hossain', role: 'Co-Investigator', linkedin: 'https://www.linkedin.com/in/mahmud-tanjid/' }
     ]
   },
   'open-access': {
@@ -869,8 +864,8 @@ const projectData = {
     description: 'Promoting open-access publishing and research dissemination across Bangladeshi institutions and beyond.',
     methodology: ['Policy Analysis', 'Institutional Survey', 'Comparative Study', 'Stakeholder Interviews'],
     researchers: [
-      { name: 'Mahmud Hossain', role: 'Principal Investigator', linkedin: 'https://www.linkedin.com/in/' },
-      { name: 'Md. Rukonuzzaman Rukon', role: 'Co-Investigator', linkedin: 'https://www.linkedin.com/in/' }
+      { name: 'Mahmud Hossain', role: 'Principal Investigator', linkedin: 'https://www.linkedin.com/in/mahmud-tanjid/' },
+      { name: 'Md. Rukonuzzaman Rukon', role: 'Co-Investigator', linkedin: 'https://www.linkedin.com/in/rukonozzaman-rukon-a944b628b/' }
     ]
   }
 };
