@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>ARI – Redirecting…</title>
+<script>
+  // GitHub Pages SPA redirect.
+  // Any unknown path (e.g. /programs, /programs/spss) lands here.
+  // We redirect to the root index.html with the original path as ?p=
+  // so the app can restore it client-side.
+  (function() {
+    var origin = window.location.origin;
+    var path   = window.location.pathname;
+    var search = window.location.search;
+    var hash   = window.location.hash;
+    // Always redirect to root index with the full original path encoded
+    window.location.replace(
+      origin + '/?p=' + encodeURIComponent(path + search) + (hash ? hash : '')
+    );
+  })();
+</script>
+</head>
+<body></body>
+</html>

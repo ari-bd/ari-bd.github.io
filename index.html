@@ -1,0 +1,1524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ARI – Advanced Research and Innovation</title>
+<meta name="description" content="Advanced Research and Innovation (ARI) promotes research knowledge, innovation, and analytical skills at the grassroots level.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-inner">
+    <div class="loader-logo-ring">
+      <img src="images/logo_ari.png" alt="ARI Logo" class="loader-logo-img-new"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+      <span class="loader-logo-fallback">ARI</span>
+    </div>
+    <div class="loader-org-name">Advanced Research &amp; Innovation</div>
+    <div class="loader-tagline">Knowledge · Research · Innovation</div>
+    <div class="loader-bar-wrap">
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- CURSOR -->
+<div class="cursor"></div>
+<div class="cursor-follower"></div>
+
+<!-- NAVBAR -->
+<header id="navbar">
+  <div class="nav-container">
+    <a href="#home" class="nav-logo" data-page="home">
+      <div class="logo-img-wrap">
+        <img src="images/logo_ari.png" alt="ARI" class="logo-img" onerror="this.parentElement.classList.add('logo-fallback')">
+        <span class="logo-fallback-text">ARI</span>
+      </div>
+      <span class="logo-text">Advanced Research<br>&amp; Innovation</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#home" class="nav-link active" data-page="home">Home</a>
+      <a href="#about" class="nav-link" data-page="about">About</a>
+      <a href="#programs" class="nav-link" data-page="programs">Programs</a>
+      <a href="#research" class="nav-link" data-page="research">Research</a>
+      <a href="#services" class="nav-link" data-page="services">Services</a>
+      <a href="#media" class="nav-link" data-page="media">Media</a>
+      <a href="#contact" class="nav-link" data-page="contact">Contact</a>
+    </nav>
+    <a href="#contact" class="nav-cta" data-page="contact">Get in Touch</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home" class="mob-link">Home</a>
+    <a href="#about" class="mob-link">About</a>
+    <a href="#programs" class="mob-link">Programs</a>
+    <a href="#research" class="mob-link">Research</a>
+    <a href="#services" class="mob-link">Services</a>
+    <a href="#media" class="mob-link">Media</a>
+    <a href="#contact" class="mob-link">Contact</a>
+  </div>
+</header>
+
+<!-- PAGE: HOME -->
+<section id="home" class="page active">
+  <div class="hero">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge reveal"><i class="fas fa-atom"></i> Since 2023 &nbsp;·&nbsp; <i class="fas fa-microscope"></i> Research &nbsp;·&nbsp; <i class="fas fa-lightbulb"></i> Innovation</div>
+      <h1 class="hero-title reveal">
+        Advancing<br>
+        <span class="gradient-text">Research &</span><br>
+        Innovation
+      </h1>
+      <p class="hero-subtitle reveal">
+        Empowering researchers, students, and professionals with world-class training, consultation, and support across the full research lifecycle.
+      </p>
+      <div class="hero-actions reveal">
+        <a href="#programs" class="btn-primary" data-page="programs">Explore Programs <i class="fas fa-arrow-right"></i></a>
+        <a href="#about" class="btn-ghost" data-page="about">Learn About ARI</a>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="hstat"><span class="hnum" data-target="5">0</span>+<p>Research Papers</p></div>
+        <div class="hstat-div"></div>
+        <div class="hstat"><span class="hnum" data-target="3">0</span>+<p>Active Projects</p></div>
+        <div class="hstat-div"></div>
+        <div class="hstat"><span class="hnum" data-target="5">0</span>+<p>Conferences</p></div>
+        <div class="hstat-div"></div>
+        <div class="hstat"><span class="hnum" data-target="20">0</span>+<p>Researchers Trained</p></div>
+      </div>
+    </div>
+    <div class="hero-visual reveal">
+      <div class="float-card fc1"><i class="fas fa-flask"></i> Research Training</div>
+      <div class="float-card fc2"><i class="fas fa-chart-bar"></i> Data Analysis</div>
+      <div class="float-card fc3"><i class="fas fa-book-open"></i> Publication Support</div>
+      <div class="hero-circle">
+        <div class="hc-inner">
+          <i class="fas fa-atom"></i>
+          <p>Evidence-Based<br>Research</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="overview-strip-wrap">
+    <div class="strip-label">
+      <span class="strip-question">Who Do We Serve?</span>
+    </div>
+    <div class="overview-strip">
+      <div class="marquee-track">
+        <div class="marquee-inner">
+          <div class="strip-item"><i class="fas fa-university"></i> University Students</div>
+          <div class="strip-div"></div>
+          <div class="strip-item"><i class="fas fa-user-md"></i> Doctors &amp; Researchers</div>
+          <div class="strip-div"></div>
+          <div class="strip-item"><i class="fas fa-chalkboard-teacher"></i> Teachers &amp; Educators</div>
+          <div class="strip-div"></div>
+          <div class="strip-item"><i class="fas fa-graduation-cap"></i> Thesis Students</div>
+          <div class="strip-div"></div>
+          <div class="strip-item"><i class="fas fa-briefcase"></i> Professionals</div>
+          <div class="strip-div"></div>
+          <div class="strip-item"><i class="fas fa-building"></i> Organizations &amp; NGOs</div>
+          <div class="strip-div"></div>
+          <div class="strip-item"><i class="fas fa-hospital"></i> Healthcare Workers</div>
+          <div class="strip-div"></div>
+          <div class="strip-item"><i class="fas fa-flask"></i> Independent Researchers</div>
+          <div class="strip-div"></div>
+          <!-- Duplicate for seamless loop -->
+          <div class="strip-item"><i class="fas fa-university"></i> University Students</div>
+          <div class="strip-div"></div>
+          <div class="strip-item"><i class="fas fa-user-md"></i> Doctors &amp; Researchers</div>
+          <div class="strip-div"></div>
+          <div class="strip-item"><i class="fas fa-chalkboard-teacher"></i> Teachers &amp; Educators</div>
+          <div class="strip-div"></div>
+          <div class="strip-item"><i class="fas fa-graduation-cap"></i> Thesis Students</div>
+          <div class="strip-div"></div>
+          <div class="strip-item"><i class="fas fa-briefcase"></i> Professionals</div>
+          <div class="strip-div"></div>
+          <div class="strip-item"><i class="fas fa-building"></i> Organizations &amp; NGOs</div>
+          <div class="strip-div"></div>
+          <div class="strip-item"><i class="fas fa-hospital"></i> Healthcare Workers</div>
+          <div class="strip-div"></div>
+          <div class="strip-item"><i class="fas fa-flask"></i> Independent Researchers</div>
+          <div class="strip-div"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-wrap">
+    <div class="section-header reveal">
+      <span class="section-tag">Our Goals</span>
+      <h2>What We Strive For</h2>
+      <p>ARI is committed to building a research-driven society through accessible education and professional development.</p>
+    </div>
+    <div class="goals-grid">
+      <div class="goal-card reveal"><div class="gc-icon"><i class="fas fa-seedling"></i></div><h3>Promote Research Culture</h3><p>Foster a culture of inquiry among students and young researchers across Bangladesh.</p></div>
+      <div class="goal-card reveal"><div class="gc-icon"><i class="fas fa-unlock"></i></div><h3>Accessible Education</h3><p>Make research education available to all levels—from beginners to advanced scholars.</p></div>
+      <div class="goal-card reveal"><div class="gc-icon"><i class="fas fa-network-wired"></i></div><h3>Collaboration Network</h3><p>Build a strong national and international research collaboration network.</p></div>
+      <div class="goal-card reveal"><div class="gc-icon"><i class="fas fa-lightbulb"></i></div><h3>Innovation &amp; Evidence</h3><p>Encourage innovation and evidence-based thinking in academic and professional settings.</p></div>
+      <div class="goal-card reveal"><div class="gc-icon"><i class="fas fa-award"></i></div><h3>Publication Support</h3><p>Support researchers in publishing papers and participating in conferences.</p></div>
+      <div class="goal-card reveal"><div class="gc-icon"><i class="fas fa-code-branch"></i></div><h3>Skills Development</h3><p>Develop practical skills in data analysis, methodology, and research tools.</p></div>
+    </div>
+  </div>
+
+  <div class="dark-section">
+    <div class="section-wrap" style="padding-top:0;padding-bottom:0">
+      <div class="section-header reveal" style="padding-top:6rem">
+        <span class="section-tag">What We Offer</span>
+        <h2>Featured Services</h2>
+        <p>From consultation to publication, ARI supports every stage of your research journey.</p>
+      </div>
+      <div class="feat-services">
+        <div class="fs-card reveal"><i class="fas fa-comments"></i><h4>Research Consultation</h4></div>
+        <div class="fs-card reveal"><i class="fas fa-chart-line"></i><h4>Data Analysis Support</h4></div>
+        <div class="fs-card reveal"><i class="fas fa-pen-nib"></i><h4>Paper Writing Help</h4></div>
+        <div class="fs-card reveal"><i class="fas fa-scroll"></i><h4>Thesis Guidance</h4></div>
+        <div class="fs-card reveal"><i class="fas fa-calculator"></i><h4>Statistical Analysis</h4></div>
+        <div class="fs-card reveal"><i class="fas fa-upload"></i><h4>Publication Support</h4></div>
+      </div>
+      <div class="text-center reveal" style="padding-top:3rem;padding-bottom:6rem">
+        <a href="#services" class="btn-primary" data-page="services">View All Services <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-wrap">
+    <div class="section-header reveal">
+      <span class="section-tag">Programs</span>
+      <h2>Training &amp; Workshops</h2>
+      <p>Structured programs designed to elevate your research competency.</p>
+    </div>
+    <div class="prog-preview-grid">
+      <div class="pp-card reveal"><div class="pp-tag">Training</div><h3>IBM SPSS &amp; Research-Ready Data Analysis</h3><p>Comprehensive training on SPSS for academic and professional research.</p><a href="#programs" class="pp-link" data-page="programs">Learn more <i class="fas fa-arrow-right"></i></a></div>
+      <div class="pp-card reveal"><div class="pp-tag">Training</div><h3>Data Analysis with Stata</h3><p>Master Stata for econometric and social science research.</p><a href="#programs" class="pp-link" data-page="programs">Learn more <i class="fas fa-arrow-right"></i></a></div>
+      <div class="pp-card reveal"><div class="pp-tag">Workshop</div><h3>Academic Writing Workshop</h3><p>Improve research writing, structure, and publication readiness.</p><a href="#programs" class="pp-link" data-page="programs">Learn more <i class="fas fa-arrow-right"></i></a></div>
+      <div class="pp-card reveal"><div class="pp-tag">Training</div><h3>Introduction to R for Data Analysis</h3><p>Statistical computing and data visualization with R.</p><a href="#programs" class="pp-link" data-page="programs">Learn more <i class="fas fa-arrow-right"></i></a></div>
+    </div>
+  </div>
+
+  <div class="stats-section">
+    <div class="stats-bg"></div>
+    <div class="stats-grid">
+      <div class="stat-item reveal"><div class="stat-num" data-target="5">0</div><div class="stat-label">Research Papers</div></div>
+      <div class="stat-item reveal"><div class="stat-num" data-target="3">0</div><div class="stat-label">Active Projects</div></div>
+      <div class="stat-item reveal"><div class="stat-num" data-target="5">0</div><div class="stat-label">Conferences</div></div>
+      <div class="stat-item reveal"><div class="stat-num" data-target="20">0</div><div class="stat-label">Researchers Trained</div></div>
+      <div class="stat-item reveal"><div class="stat-num" data-target="5">0</div><div class="stat-label">Interns</div></div>
+    </div>
+  </div>
+
+  <div class="section-wrap">
+    <div class="section-header reveal">
+      <span class="section-tag">Updates</span>
+      <h2>Latest News &amp; Notices</h2>
+    </div>
+    <div class="notices reveal">
+      <div class="notice-item notice-clickable" data-page="media" data-med-section="news"><span class="ni-dot new"></span><div><strong>Website launching soon</strong> — a modern, user-friendly platform for research collaboration. <span class="ni-date">June 2026</span></div><i class="fas fa-arrow-right ni-arrow"></i></div>
+      <!-- <div class="notice-item notice-clickable" data-page="media" data-med-section="news"><span class="ni-dot"></span><div><strong>Workshop Announcement</strong> — Research Methodology &amp; Academic Writing. <span class="ni-date">May 2025</span></div><i class="fas fa-arrow-right ni-arrow"></i></div>
+      <div class="notice-item notice-clickable" data-page="media" data-med-section="notice"><span class="ni-dot"></span><div><strong>ARI Internship Program</strong> — Applications open for research assistants. <span class="ni-date">April 2025</span></div><i class="fas fa-arrow-right ni-arrow"></i></div>
+      <div class="notice-item notice-clickable" data-page="media" data-med-section="notice"><span class="ni-dot"></span><div><strong>Publication Drive</strong> — ARI supporting researchers for journal submissions. <span class="ni-date">March 2025</span></div><i class="fas fa-arrow-right ni-arrow"></i></div>
+    </div> -->
+  </div>
+
+  <div class="cta-banner reveal">
+    <div class="cta-content">
+      <h2>Ready to Begin Your Research Journey?</h2>
+      <p>Join the researchers who have accelerated their academic careers with ARI's expert guidance.</p>
+      <a href="#contact" class="btn-primary" data-page="contact">Contact Us Today <i class="fas fa-envelope"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- PAGE: ABOUT -->
+<section id="about" class="page">
+  <div class="page-hero">
+    <div class="orb orb-1"></div><div class="orb orb-2"></div>
+    <div class="ph-content">
+      <span class="section-tag">Who We Are</span>
+      <h1>About <span class="gradient-text">ARI</span></h1>
+      <p>Established in 2023 to champion research culture, innovation, and evidence-based thinking across Bangladesh.</p>
+    </div>
+  </div>
+
+  <div class="section-wrap">
+    <div class="two-col reveal">
+      <div>
+        <span class="section-tag">Our Story</span>
+        <h2 style="margin-top:.5rem">Building a Research-Driven Society</h2>
+        <p style="margin-top:1.5rem;color:var(--text-muted);line-height:1.9">Advanced Research and Innovation (ARI) was founded in 2023 by a passionate group of researchers committed to making research knowledge accessible to all. We support researchers throughout the entire research lifecycle—from idea generation, proposal development, data collection, analysis, report writing, publication, and presentation.</p>
+        <p style="margin-top:1rem;color:var(--text-muted);line-height:1.9">ARI focuses on making research education practical, impactful, and accessible to university students, teachers, doctors, thesis students, and professional researchers across Bangladesh and beyond.</p>
+      </div>
+      <div class="about-visual">
+        <div class="av-box">
+          <i class="fas fa-atom av-icon"></i>
+          <p class="av-year">Est. 2023</p>
+          <p class="av-sub">Advanced Research &amp; Innovation</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="dark-section">
+    <div class="section-wrap" style="padding-top:0;padding-bottom:0">
+      <div class="vm-grid" style="padding-top:6rem;padding-bottom:6rem">
+        <div class="vm-card reveal"><div class="vm-icon"><i class="fas fa-eye"></i></div><h3>Vision</h3><p>To build a research-driven society where knowledge, innovation, and evidence-based decision-making are widely practiced.</p></div>
+        <div class="vm-card reveal"><div class="vm-icon"><i class="fas fa-bullseye"></i></div><h3>Mission</h3><p>To provide accessible research training, consultation, and professional support that empowers individuals to conduct high-quality research.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-wrap">
+    <div class="section-header reveal"><span class="section-tag">Goals</span><h2>What ARI Aims to Achieve</h2></div>
+    <div class="goals-list reveal">
+      <div class="gl-item"><i class="fas fa-check-circle"></i> Promote research culture among students and young researchers</div>
+      <div class="gl-item"><i class="fas fa-check-circle"></i> Make research education accessible to all levels</div>
+      <div class="gl-item"><i class="fas fa-check-circle"></i> Support academic and professional research development</div>
+      <div class="gl-item"><i class="fas fa-check-circle"></i> Develop practical skills in data analysis and methodology</div>
+      <div class="gl-item"><i class="fas fa-check-circle"></i> Encourage innovation and evidence-based thinking</div>
+      <div class="gl-item"><i class="fas fa-check-circle"></i> Build a strong research collaboration network</div>
+      <div class="gl-item"><i class="fas fa-check-circle"></i> Support publication and conference participation</div>
+      <div class="gl-item"><i class="fas fa-check-circle"></i> Strengthen national and international research contributions</div>
+    </div>
+  </div>
+
+  <div class="section-wrap" style="padding-top:0">
+    <div class="section-header reveal"><span class="section-tag">Objectives</span><h2>How We Achieve Our Goals</h2></div>
+    <div class="obj-grid">
+      <div class="obj-card reveal"><i class="fas fa-layer-group"></i><p>Structured research training from beginner to advanced level</p></div>
+      <div class="obj-card reveal"><i class="fas fa-calendar-alt"></i><p>Organize workshops, seminars, and academic events</p></div>
+      <div class="obj-card reveal"><i class="fas fa-comments"></i><p>Offer research consultation and mentorship services</p></div>
+      <div class="obj-card reveal"><i class="fas fa-scroll"></i><p>Assist in thesis, dissertation, and journal publication</p></div>
+      <div class="obj-card reveal"><i class="fas fa-chart-bar"></i><p>Support data analysis using SPSS, R, Stata, and Python</p></div>
+      <div class="obj-card reveal"><i class="fas fa-clipboard-list"></i><p>Help in survey design, report writing, and statistical analysis</p></div>
+      <div class="obj-card reveal"><i class="fas fa-briefcase"></i><p>Facilitate internships and research assistant opportunities</p></div>
+      <div class="obj-card reveal"><i class="fas fa-hands-helping"></i><p>Develop future researchers through hands-on learning</p></div>
+    </div>
+  </div>
+
+  <!-- FOUNDERS with popup -->
+  <div class="dark-section">
+    <div class="section-wrap" style="padding-top:0;padding-bottom:0">
+      <div style="padding-top:6rem;padding-bottom:6rem">
+        <div class="section-header reveal">
+          <span class="section-tag">Leadership</span>
+          <h2>Founders of ARI</h2>
+          <p>Click on any founder to learn more about their background and connect with them professionally.</p>
+        </div>
+        <div class="founders-grid">
+          <div class="founder-card reveal" data-founder="rukon" role="button" tabindex="0" aria-label="View profile of Md. Rukonuzzaman Rukon">
+            <div class="fc-avatar fc-avatar-photo"><img src="images/RR.jpg" alt="Md. Rukonuzzaman Rukon" class="fc-avatar-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="fc-avatar-fallback">RR</span></div>
+            <h4>Md. Rukonuzzaman Rukon</h4>
+            <span class="fc-role">Co-Founder</span>
+            <p>Dedicated to advancing research methodology and knowledge dissemination.</p>
+            <div class="fc-view-profile"><i class="fas fa-eye"></i> View Profile</div>
+          </div>
+          <div class="founder-card reveal" data-founder="ador" role="button" tabindex="0" aria-label="View profile of Md. Ador Hossain">
+            <div class="fc-avatar fc-avatar-photo"><img src="images/MA.jpg" alt="Md. Ador Hossain" class="fc-avatar-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="fc-avatar-fallback">MA</span></div>
+            <h4>Md. Ador Hossain</h4>
+            <span class="fc-role">Co-Founder</span>
+            <p>Committed to making research training accessible and impactful.</p>
+            <div class="fc-view-profile"><i class="fas fa-eye"></i> View Profile</div>
+          </div>
+          <div class="founder-card reveal" data-founder="samrat" role="button" tabindex="0" aria-label="View profile of Samrat Kumar Dev Sharma">
+            <div class="fc-avatar fc-avatar-photo"><img src="images/SSK.jpg" alt="Samrat Kumar Dev Sharma" class="fc-avatar-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="fc-avatar-fallback">SSK</span></div>
+            <h4>Samrat Kumar Dev Sharma</h4>
+            <span class="fc-role">Co-Founder</span>
+            <p>Passionate about data analysis and evidence-based research practices.</p>
+            <div class="fc-view-profile"><i class="fas fa-eye"></i> View Profile</div>
+          </div>
+          <div class="founder-card reveal" data-founder="futanta" role="button" tabindex="0" aria-label="View profile of Futanta Chakma">
+            <div class="fc-avatar fc-avatar-photo"><img src="images/FC.jpg" alt="Futanta Chakma" class="fc-avatar-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="fc-avatar-fallback">FC</span></div>
+            <h4>Futanta Chakma</h4>
+            <span class="fc-role">Co-Founder</span>
+            <p>Focused on promoting research culture among diverse communities.</p>
+            <div class="fc-view-profile"><i class="fas fa-eye"></i> View Profile</div>
+          </div>
+          <div class="founder-card reveal" data-founder="mahmud" role="button" tabindex="0" aria-label="View profile of Mahmud Hossain">
+            <div class="fc-avatar fc-avatar-photo"><img src="images/MH.jpg" alt="Mahmud Hossain" class="fc-avatar-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="fc-avatar-fallback">MH</span></div>
+            <h4>Mahmud Hossain</h4>
+            <span class="fc-role">Co-Founder</span>
+            <p>Dedicated to building research networks and academic collaborations.</p>
+            <div class="fc-view-profile"><i class="fas fa-eye"></i> View Profile</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- INTERNS -->
+  <div class="section-wrap">
+    <div class="section-header reveal">
+      <span class="section-tag">Our Team</span>
+      <h2>Research Interns</h2>
+      <p>Talented individuals contributing to ARI's mission through dedicated research assistance and project support.</p>
+    </div>
+    <div class="interns-grid">
+      <div class="intern-card reveal" data-intern="tasneem" role="button" tabindex="0" aria-label="View profile of Tasneem Ahmed"><div class="intern-avatar intern-avatar-photo intern-avatar-photo intern-avatar-photo intern-avatar-photo intern-avatar-photo"><img src="images/TA.jpg" alt="Tasneem Ahmed" class="intern-avatar-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="intern-avatar-fallback">TA</span></div><h4>Tasneem Ahmed</h4><span class="intern-role">Research Assistant Intern</span><p>Supporting data collection and analysis for ongoing research projects.</p><div class="intern-dept"><i class="fas fa-flask"></i> Data Analysis</div><div class="fc-view-profile"><i class="fas fa-eye"></i> View Profile</div></div>
+      <div class="intern-card reveal" data-intern="rafiqul" role="button" tabindex="0" aria-label="View profile of Rafiqul Hasan"><div class="intern-avatar gradient-b"><img src="images/RH.jpg" alt="Rafiqul Hasan" class="intern-avatar-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="intern-avatar-fallback">RH</span></div><h4>Rafiqul Hasan</h4><span class="intern-role">Content &amp; Publication Intern</span><p>Assisting in academic writing, editing, and publication preparation.</p><div class="intern-dept"><i class="fas fa-pen-nib"></i> Publication</div><div class="fc-view-profile"><i class="fas fa-eye"></i> View Profile</div></div>
+      <div class="intern-card reveal" data-intern="nusrat" role="button" tabindex="0" aria-label="View profile of Nusrat Islam"><div class="intern-avatar gradient-c"><img src="images/NI.jpg" alt="Nusrat Islam" class="intern-avatar-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="intern-avatar-fallback">NI</span></div><h4>Nusrat Islam</h4><span class="intern-role">Survey &amp; Methodology Intern</span><p>Designing survey instruments and supporting research methodology development.</p><div class="intern-dept"><i class="fas fa-clipboard-list"></i> Methodology</div><div class="fc-view-profile"><i class="fas fa-eye"></i> View Profile</div></div>
+      <div class="intern-card reveal" data-intern="sabbir" role="button" tabindex="0" aria-label="View profile of Sabbir Biswas"><div class="intern-avatar gradient-d"><img src="images/SB.jpg" alt="Sabbir Biswas" class="intern-avatar-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="intern-avatar-fallback">SB</span></div><h4>Sabbir Biswas</h4><span class="intern-role">Training Support Intern</span><p>Coordinating training programs and providing participant support during workshops.</p><div class="intern-dept"><i class="fas fa-chalkboard-teacher"></i> Training</div><div class="fc-view-profile"><i class="fas fa-eye"></i> View Profile</div></div>
+      <div class="intern-card reveal" data-intern="maliha" role="button" tabindex="0" aria-label="View profile of Maliha Rahman"><div class="intern-avatar gradient-e"><img src="images/MR.jpg" alt="Maliha Rahman" class="intern-avatar-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="intern-avatar-fallback">MR</span></div><h4>Maliha Rahman</h4><span class="intern-role">Research Coordination Intern</span><p>Coordinating cross-team research activities and project documentation.</p><div class="intern-dept"><i class="fas fa-project-diagram"></i> Coordination</div><div class="fc-view-profile"><i class="fas fa-eye"></i> View Profile</div></div>
+      <div class="intern-card reveal" data-intern="karim" role="button" tabindex="0" aria-label="View profile of Karim Al-Amin"><div class="intern-avatar gradient-f"><img src="images/KA.jpg" alt="Karim Al-Amin" class="intern-avatar-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="intern-avatar-fallback">KA</span></div><h4>Karim Al-Amin</h4><span class="intern-role">Digital &amp; Outreach Intern</span><p>Managing digital communications and research outreach initiatives for ARI.</p><div class="intern-dept"><i class="fas fa-bullhorn"></i> Outreach</div><div class="fc-view-profile"><i class="fas fa-eye"></i> View Profile</div></div>
+    </div>
+    <div class="text-center reveal" style="margin-top:3rem">
+      <a href="mailto:research.ari.bd@gmail.com" class="btn-ghost"><i class="fas fa-user-plus"></i> Apply for Internship</a>
+    </div>
+  </div>
+</section>
+
+<!-- PAGE: PROGRAMS -->
+<section id="programs" class="page">
+  <!-- HERO BANNER -->
+  <div class="prog-hero">
+    <div class="orb orb-1"></div><div class="orb orb-2"></div>
+    <div class="prog-hero-content">
+      <span class="section-tag">Grassroots Education</span>
+      <h1>Academic Programs &amp; <span class="gradient-text">Bootcamps</span></h1>
+      <p>Equip yourself with hands-on command over leading research suites, reference architectures, and scientific publication paradigms.</p>
+      <div class="prog-hero-stats">
+        <div class="phs-item"><span class="phs-num">4+</span><span class="phs-label">Training Programs</span></div>
+        <div class="phs-div"></div>
+        <div class="phs-item"><span class="phs-num">3</span><span class="phs-label">Workshops</span></div>
+        <div class="phs-div"></div>
+        <div class="phs-item"><span class="phs-num">200+</span><span class="phs-label">Enrolled</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FILTER TABS -->
+  <div class="prog-filter-wrap">
+    <div class="prog-filter-bar">
+      <button class="pf-tab active" data-filter="all">All Offerings</button>
+      <button class="pf-tab" data-filter="training">Training Programs</button>
+      <button class="pf-tab" data-filter="workshop">Workshops</button>
+      <button class="pf-tab" data-filter="course">Full Courses</button>
+    </div>
+  </div>
+
+  <!-- PROGRAMS GRID -->
+  <div class="section-wrap" style="padding-top:3rem">
+    <div class="prog2-grid" id="prog2Grid">
+
+      <!-- Training Cards -->
+      <div class="prog2-card reveal" data-cat="training">
+        <div class="p2c-top">
+          <div class="p2c-icon-wrap"><i class="fas fa-database"></i></div>
+          <div class="p2c-meta">
+            <span class="p2c-badge training">Training</span>
+            <span class="p2c-intake"><i class="fas fa-bolt"></i> Next Batch: June 2025</span>
+          </div>
+        </div>
+        <h3>IBM SPSS &amp; Research-Ready Data Analysis</h3>
+        <p>Master SPSS for academic and professional data analysis. Covers descriptive statistics, inferential tests, regression, and complete data workflows.</p>
+        <div class="p2c-tools">
+          <span>SPSS</span><span>Statistics</span><span>Regression</span><span>Hypothesis Testing</span>
+        </div>
+        <div class="p2c-features">
+          <div class="p2f-item"><i class="fas fa-check-circle"></i> Descriptive &amp; Inferential Statistics</div>
+          <div class="p2f-item"><i class="fas fa-check-circle"></i> Regression Analysis</div>
+          <div class="p2f-item"><i class="fas fa-check-circle"></i> Data Cleaning &amp; Preparation</div>
+          <div class="p2f-item"><i class="fas fa-check-circle"></i> Hypothesis Testing</div>
+        </div>
+        <div class="p2c-footer">
+          <div class="p2c-info"><i class="fas fa-layer-group"></i> Beginner–Advanced &nbsp; <i class="fas fa-clock"></i> 4 Weeks</div>
+          <div class="p2c-fee-wrap">
+            <div class="p2c-fee"><span class="fee-label">Fee</span><div class="fee-prices"><div class="fee-row fee-row-pro"><span class="fee-row-label"><i class="fas fa-briefcase"></i> Professional</span><span class="fee-pro-price">৳ 2,500</span></div><div class="fee-row fee-row-student"><span class="fee-row-label"><i class="fas fa-graduation-cap"></i> Student</span><span class="fee-student-price">৳ 1,800</span></div></div></div>
+            <button class="btn-primary enroll-btn p2c-enroll" data-program="IBM SPSS &amp; Research-Ready Data Analysis" data-form-url="">Enroll <i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="prog2-card reveal" data-cat="training">
+        <div class="p2c-top">
+          <div class="p2c-icon-wrap"><i class="fas fa-chart-area"></i></div>
+          <div class="p2c-meta">
+            <span class="p2c-badge training">Training</span>
+            <span class="p2c-intake"><i class="fas fa-bolt"></i> Next Batch: July 2025</span>
+          </div>
+        </div>
+        <h3>Data Analysis with Stata</h3>
+        <p>Comprehensive Stata training for econometric and social science research methodology with panel data and time series focus.</p>
+        <div class="p2c-tools">
+          <span>Stata</span><span>Econometrics</span><span>Panel Data</span><span>Time Series</span>
+        </div>
+        <div class="p2c-features">
+          <div class="p2f-item"><i class="fas fa-check-circle"></i> Panel Data Analysis</div>
+          <div class="p2f-item"><i class="fas fa-check-circle"></i> Econometric Models</div>
+          <div class="p2f-item"><i class="fas fa-check-circle"></i> Time Series Analysis</div>
+          <div class="p2f-item"><i class="fas fa-check-circle"></i> Survey Data Processing</div>
+        </div>
+        <div class="p2c-footer">
+          <div class="p2c-info"><i class="fas fa-layer-group"></i> Intermediate &nbsp; <i class="fas fa-clock"></i> 3 Weeks</div>
+          <div class="p2c-fee-wrap">
+            <div class="p2c-fee"><span class="fee-label">Fee</span><div class="fee-prices"><div class="fee-row fee-row-pro"><span class="fee-row-label"><i class="fas fa-briefcase"></i> Professional</span><span class="fee-pro-price">৳ 2,200</span></div><div class="fee-row fee-row-student"><span class="fee-row-label"><i class="fas fa-graduation-cap"></i> Student</span><span class="fee-student-price">৳ 1,500</span></div></div></div>
+            <button class="btn-primary enroll-btn p2c-enroll" data-program="Data Analysis with Stata" data-form-url="">Enroll <i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="prog2-card reveal" data-cat="training">
+        <div class="p2c-top">
+          <div class="p2c-icon-wrap"><i class="fas fa-code"></i></div>
+          <div class="p2c-meta">
+            <span class="p2c-badge training">Training</span>
+            <span class="p2c-intake ended-intake"><i class="fas fa-lock"></i> Enrollment Closed</span>
+          </div>
+        </div>
+        <h3>Introduction to R for Data Analysis</h3>
+        <p>Learn statistical computing and data visualization with R from fundamentals to advanced modeling techniques.</p>
+        <div class="p2c-tools">
+          <span>R</span><span>ggplot2</span><span>tidyverse</span><span>R Markdown</span>
+        </div>
+        <div class="p2c-features">
+          <div class="p2f-item"><i class="fas fa-check-circle"></i> R Basics &amp; Data Types</div>
+          <div class="p2f-item"><i class="fas fa-check-circle"></i> ggplot2 Visualization</div>
+          <div class="p2f-item"><i class="fas fa-check-circle"></i> Statistical Modeling</div>
+          <div class="p2f-item"><i class="fas fa-check-circle"></i> R Markdown Reports</div>
+        </div>
+        <div class="p2c-footer">
+          <div class="p2c-info"><i class="fas fa-layer-group"></i> Beginner &nbsp; <i class="fas fa-clock"></i> 4 Weeks</div>
+          <div class="p2c-fee-wrap">
+            <div class="p2c-fee"><span class="fee-label">Recording</span><div class="fee-prices"><div class="fee-row fee-row-pro"><span class="fee-row-label"><i class="fas fa-briefcase"></i> Professional</span><span class="fee-pro-price">৳ 1,200</span></div><div class="fee-row fee-row-student"><span class="fee-row-label"><i class="fas fa-graduation-cap"></i> Student</span><span class="fee-student-price">৳ 800</span></div></div></div>
+            <button class="btn-recording enroll-btn p2c-enroll" data-program="Introduction to R for Data Analysis (Recording)" data-form-url=""><i class="fas fa-play-circle"></i> Access Recording</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="prog2-card reveal" data-cat="training">
+        <div class="p2c-top">
+          <div class="p2c-icon-wrap"><i class="fas fa-book-reader"></i></div>
+          <div class="p2c-meta">
+            <span class="p2c-badge training">Training</span>
+            <span class="p2c-intake"><i class="fas fa-bolt"></i> Always Available</span>
+          </div>
+        </div>
+        <h3>Zotero &amp; Mendeley Referencing</h3>
+        <p>Professional reference management for researchers, thesis students, and academics working on publications.</p>
+        <div class="p2c-tools">
+          <span>Zotero</span><span>Mendeley</span><span>APA</span><span>Word Integration</span>
+        </div>
+        <div class="p2c-features">
+          <div class="p2f-item"><i class="fas fa-check-circle"></i> Citation Management</div>
+          <div class="p2f-item"><i class="fas fa-check-circle"></i> Bibliography Generation</div>
+          <div class="p2f-item"><i class="fas fa-check-circle"></i> MS Word Integration</div>
+          <div class="p2f-item"><i class="fas fa-check-circle"></i> APA, MLA, Chicago Styles</div>
+        </div>
+        <div class="p2c-footer">
+          <div class="p2c-info"><i class="fas fa-layer-group"></i> All Levels &nbsp; <i class="fas fa-clock"></i> 1 Week</div>
+          <div class="p2c-fee-wrap">
+            <div class="p2c-fee"><span class="fee-label">Fee</span><div class="fee-prices"><div class="fee-row fee-row-pro"><span class="fee-row-label"><i class="fas fa-briefcase"></i> Professional</span><span class="fee-pro-price">৳ 800</span></div><div class="fee-row fee-row-student"><span class="fee-row-label"><i class="fas fa-graduation-cap"></i> Student</span><span class="fee-student-price">৳ 500</span></div></div></div>
+            <button class="btn-primary enroll-btn p2c-enroll" data-program="Zotero &amp; Mendeley Referencing" data-form-url="">Enroll <i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Workshop Cards -->
+      <div class="prog2-card reveal" data-cat="workshop">
+        <div class="p2c-top">
+          <div class="p2c-icon-wrap ws-icon-clr"><i class="fas fa-microscope"></i></div>
+          <div class="p2c-meta">
+            <span class="p2c-badge workshop">Workshop</span>
+            <span class="p2c-intake"><i class="fas fa-calendar"></i> June 2025</span>
+          </div>
+        </div>
+        <h3>Research Methodology Workshop</h3>
+        <p>Deep dive into qualitative, quantitative, and mixed-methods research design for academic excellence and publication readiness.</p>
+        <div class="p2c-tools">
+          <span>Qualitative</span><span>Quantitative</span><span>Mixed-Methods</span>
+        </div>
+        <div class="p2c-features">
+          <div class="p2f-item"><i class="fas fa-check-circle"></i> Research Design Frameworks</div>
+          <div class="p2f-item"><i class="fas fa-check-circle"></i> Sampling Strategies</div>
+          <div class="p2f-item"><i class="fas fa-check-circle"></i> Validity &amp; Reliability</div>
+          <div class="p2f-item"><i class="fas fa-check-circle"></i> Ethics in Research</div>
+        </div>
+        <div class="p2c-footer">
+          <div class="p2c-info"><i class="fas fa-layer-group"></i> All Levels &nbsp; <i class="fas fa-clock"></i> 2-Day Intensive</div>
+          <div class="p2c-fee-wrap">
+            <div class="p2c-fee"><span class="fee-label">Fee</span><div class="fee-prices"><div class="fee-row fee-row-pro"><span class="fee-row-label"><i class="fas fa-briefcase"></i> Professional</span><span class="fee-pro-price">৳ 1,500</span></div><div class="fee-row fee-row-student"><span class="fee-row-label"><i class="fas fa-graduation-cap"></i> Student</span><span class="fee-student-price">৳ 1,000</span></div></div></div>
+            <button class="btn-primary enroll-btn p2c-enroll" data-program="Research Methodology Workshop" data-form-url="">Register <i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="prog2-card reveal" data-cat="workshop">
+        <div class="p2c-top">
+          <div class="p2c-icon-wrap ws-icon-clr"><i class="fas fa-chart-pie"></i></div>
+          <div class="p2c-meta">
+            <span class="p2c-badge workshop">Workshop</span>
+            <span class="p2c-intake ended-intake"><i class="fas fa-lock"></i> Enrollment Closed</span>
+          </div>
+        </div>
+        <h3>Data Analysis Workshop</h3>
+        <p>Hands-on workshop covering data cleaning, analysis pipelines, visualization techniques, and interpretation of results.</p>
+        <div class="p2c-tools">
+          <span>SPSS</span><span>Excel</span><span>Visualization</span>
+        </div>
+        <div class="p2c-features">
+          <div class="p2f-item"><i class="fas fa-check-circle"></i> Data Cleaning Pipelines</div>
+          <div class="p2f-item"><i class="fas fa-check-circle"></i> Chart &amp; Graph Design</div>
+          <div class="p2f-item"><i class="fas fa-check-circle"></i> Interpretation of Results</div>
+          <div class="p2f-item"><i class="fas fa-check-circle"></i> Report Visualization</div>
+        </div>
+        <div class="p2c-footer">
+          <div class="p2c-info"><i class="fas fa-layer-group"></i> Beginner–Intermediate &nbsp; <i class="fas fa-clock"></i> Full Day</div>
+          <div class="p2c-fee-wrap">
+            <div class="p2c-fee"><span class="fee-label">Recording</span><div class="fee-prices"><div class="fee-row fee-row-pro"><span class="fee-row-label"><i class="fas fa-briefcase"></i> Professional</span><span class="fee-pro-price">৳ 900</span></div><div class="fee-row fee-row-student"><span class="fee-row-label"><i class="fas fa-graduation-cap"></i> Student</span><span class="fee-student-price">৳ 600</span></div></div></div>
+            <button class="btn-recording enroll-btn p2c-enroll" data-program="Data Analysis Workshop (Recording)" data-form-url=""><i class="fas fa-play-circle"></i> Access Recording</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="prog2-card reveal" data-cat="workshop">
+        <div class="p2c-top">
+          <div class="p2c-icon-wrap ws-icon-clr"><i class="fas fa-pen-alt"></i></div>
+          <div class="p2c-meta">
+            <span class="p2c-badge workshop">Workshop</span>
+            <span class="p2c-intake"><i class="fas fa-calendar"></i> Aug 2025</span>
+          </div>
+        </div>
+        <h3>Academic Writing Workshop</h3>
+        <p>Enhance research writing skills — structure, clarity, literature review, citation, and publication readiness for international journals.</p>
+        <div class="p2c-tools">
+          <span>Academic Writing</span><span>Literature Review</span><span>Citation</span>
+        </div>
+        <div class="p2c-features">
+          <div class="p2f-item"><i class="fas fa-check-circle"></i> Paper Structure &amp; Flow</div>
+          <div class="p2f-item"><i class="fas fa-check-circle"></i> Literature Review Writing</div>
+          <div class="p2f-item"><i class="fas fa-check-circle"></i> Abstract &amp; Title Crafting</div>
+          <div class="p2f-item"><i class="fas fa-check-circle"></i> Journal Submission Prep</div>
+        </div>
+        <div class="p2c-footer">
+          <div class="p2c-info"><i class="fas fa-layer-group"></i> Intermediate–Advanced &nbsp; <i class="fas fa-clock"></i> 3-Day Program</div>
+          <div class="p2c-fee-wrap">
+            <div class="p2c-fee"><span class="fee-label">Fee</span><div class="fee-prices"><div class="fee-row fee-row-pro"><span class="fee-row-label"><i class="fas fa-briefcase"></i> Professional</span><span class="fee-pro-price">৳ 2,000</span></div><div class="fee-row fee-row-student"><span class="fee-row-label"><i class="fas fa-graduation-cap"></i> Student</span><span class="fee-student-price">৳ 1,400</span></div></div></div>
+            <button class="btn-primary enroll-btn p2c-enroll" data-program="Academic Writing Workshop" data-form-url="">Register <i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Course Cards -->
+      <div class="prog2-card reveal" data-cat="course">
+        <div class="p2c-top">
+          <div class="p2c-icon-wrap course-icon-clr"><i class="fas fa-seedling"></i></div>
+          <div class="p2c-meta">
+            <span class="p2c-badge course">Course</span>
+            <span class="p2c-intake"><i class="fas fa-layer-group"></i> Beginner</span>
+          </div>
+        </div>
+        <h3>Beginner Research Fundamentals</h3>
+        <p>Start from zero — understand research concepts, types, ethics, and the complete lifecycle of academic research.</p>
+        <div class="p2c-tools"><span>Research Concepts</span><span>Ethics</span><span>Methodology Intro</span></div>
+        <div class="p2c-features">
+          <div class="p2f-item"><i class="fas fa-check-circle"></i> Research Types &amp; Designs</div>
+          <div class="p2f-item"><i class="fas fa-check-circle"></i> Problem Statement Writing</div>
+          <div class="p2f-item"><i class="fas fa-check-circle"></i> Research Ethics</div>
+          <div class="p2f-item"><i class="fas fa-check-circle"></i> Intro to Academic Sources</div>
+        </div>
+        <div class="p2c-footer">
+          <div class="p2c-info"><i class="fas fa-graduation-cap"></i> Self-paced &nbsp; <i class="fas fa-clock"></i> 6 Weeks</div>
+          <div class="p2c-fee-wrap">
+            <div class="p2c-fee"><span class="fee-label">Fee</span><div class="fee-prices"><div class="fee-row fee-row-pro"><span class="fee-row-label"><i class="fas fa-briefcase"></i> Professional</span><span class="fee-pro-price">৳ 1,800</span></div><div class="fee-row fee-row-student"><span class="fee-row-label"><i class="fas fa-graduation-cap"></i> Student</span><span class="fee-student-price">৳ 1,200</span></div></div></div>
+            <button class="btn-primary enroll-btn p2c-enroll" data-program="Beginner Research Fundamentals" data-form-url="">Enroll <i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="prog2-card reveal" data-cat="course">
+        <div class="p2c-top">
+          <div class="p2c-icon-wrap course-icon-clr"><i class="fas fa-flask"></i></div>
+          <div class="p2c-meta">
+            <span class="p2c-badge course">Course</span>
+            <span class="p2c-intake"><i class="fas fa-layer-group"></i> Intermediate</span>
+          </div>
+        </div>
+        <h3>Intermediate Research Methods</h3>
+        <p>Survey design, sampling, data collection strategies, and comprehensive literature review techniques for academic projects.</p>
+        <div class="p2c-tools"><span>Survey Design</span><span>Sampling</span><span>Literature Review</span></div>
+        <div class="p2c-features">
+          <div class="p2f-item"><i class="fas fa-check-circle"></i> Survey &amp; Questionnaire Design</div>
+          <div class="p2f-item"><i class="fas fa-check-circle"></i> Sampling Techniques</div>
+          <div class="p2f-item"><i class="fas fa-check-circle"></i> Data Collection Strategies</div>
+          <div class="p2f-item"><i class="fas fa-check-circle"></i> Systematic Literature Review</div>
+        </div>
+        <div class="p2c-footer">
+          <div class="p2c-info"><i class="fas fa-graduation-cap"></i> Structured &nbsp; <i class="fas fa-clock"></i> 8 Weeks</div>
+          <div class="p2c-fee-wrap">
+            <div class="p2c-fee"><span class="fee-label">Fee</span><div class="fee-prices"><div class="fee-row fee-row-pro"><span class="fee-row-label"><i class="fas fa-briefcase"></i> Professional</span><span class="fee-pro-price">৳ 2,800</span></div><div class="fee-row fee-row-student"><span class="fee-row-label"><i class="fas fa-graduation-cap"></i> Student</span><span class="fee-student-price">৳ 2,000</span></div></div></div>
+            <button class="btn-primary enroll-btn p2c-enroll" data-program="Intermediate Research Methods" data-form-url="">Enroll <i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="prog2-card reveal" data-cat="course">
+        <div class="p2c-top">
+          <div class="p2c-icon-wrap course-icon-clr"><i class="fas fa-award"></i></div>
+          <div class="p2c-meta">
+            <span class="p2c-badge course">Course</span>
+            <span class="p2c-intake ended-intake"><i class="fas fa-lock"></i> Enrollment Closed</span>
+          </div>
+        </div>
+        <h3>Advanced Research &amp; Publication</h3>
+        <p>Journal submission, peer review, conference presentations, impact metrics, and navigating the academic publishing landscape.</p>
+        <div class="p2c-tools"><span>Journal Submission</span><span>Peer Review</span><span>Scopus/ISI</span></div>
+        <div class="p2c-features">
+          <div class="p2f-item"><i class="fas fa-check-circle"></i> Journal Selection Strategy</div>
+          <div class="p2f-item"><i class="fas fa-check-circle"></i> Peer Review Response</div>
+          <div class="p2f-item"><i class="fas fa-check-circle"></i> Conference Presentations</div>
+          <div class="p2f-item"><i class="fas fa-check-circle"></i> Impact Factor &amp; Metrics</div>
+        </div>
+        <div class="p2c-footer">
+          <div class="p2c-info"><i class="fas fa-graduation-cap"></i> Structured &nbsp; <i class="fas fa-clock"></i> 6 Weeks</div>
+          <div class="p2c-fee-wrap">
+            <div class="p2c-fee"><span class="fee-label">Recording</span><div class="fee-prices"><div class="fee-row fee-row-pro"><span class="fee-row-label"><i class="fas fa-briefcase"></i> Professional</span><span class="fee-pro-price">৳ 1,500</span></div><div class="fee-row fee-row-student"><span class="fee-row-label"><i class="fas fa-graduation-cap"></i> Student</span><span class="fee-student-price">৳ 1,000</span></div></div></div>
+            <button class="btn-recording enroll-btn p2c-enroll" data-program="Advanced Research &amp; Publication (Recording)" data-form-url=""><i class="fas fa-play-circle"></i> Access Recording</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- CTA STRIP -->
+  <div class="prog-cta-strip reveal">
+    <div class="pcs-inner">
+      <div>
+        <h3>Can't find what you need?</h3>
+        <p>ARI creates custom training programs tailored to your institution's specific needs.</p>
+      </div>
+      <a href="mailto:research.ari.bd@gmail.com" class="btn-primary">Contact ARI <i class="fas fa-envelope"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- PAGE: RESEARCH -->
+<section id="research" class="page">
+  <!-- HERO BANNER -->
+  <div class="research-hero">
+    <div class="orb orb-1"></div><div class="orb orb-2"></div>
+    <div class="research-hero-content">
+      <span class="section-tag">Empirical Discoveries</span>
+      <h1>Projects &amp; <span class="gradient-text">Publications</span></h1>
+      <p>Explore our ongoing real-world grassroots investigations, statistical models, and collaborative peer-reviewed scholarly work.</p>
+    </div>
+  </div>
+
+  <!-- PROJECTS SECTION -->
+  <div class="section-wrap">
+    <div class="rh-section-label reveal">
+      <div class="rsl-icon"><i class="fas fa-briefcase"></i></div>
+      <div>
+        <h2>Research Projects Archive</h2>
+        <p>Real-world interventions driven by the ARI core execution force.</p>
+      </div>
+    </div>
+
+    <!-- Project Filter Tabs -->
+    <div class="proj-tabs reveal">
+      <button class="ptab active" data-tab="ongoing"><i class="fas fa-circle" style="font-size:.5rem;color:#60a5fa"></i> Ongoing</button>
+      <button class="ptab" data-tab="completed"><i class="fas fa-check-circle" style="font-size:.7rem;color:#a78bfa"></i> Completed</button>
+      <button class="ptab" data-tab="upcoming"><i class="fas fa-clock" style="font-size:.7rem;color:#818cf8"></i> Upcoming</button>
+    </div>
+
+    <div class="proj-tab-content" id="ongoing">
+      <div class="proj2-grid-research">
+        <div class="proj2-card-r reveal" data-project="research-culture" onclick="openProjectModal('research-culture')" style="cursor:pointer">
+          <div class="p2r-header">
+            <div class="p2r-status ongoing"><i class="fas fa-circle"></i> Ongoing</div>
+            <div class="p2r-year">2024–2025</div>
+          </div>
+          <h3>Research Culture Development in Bangladeshi Universities</h3>
+          <p>A multi-institutional study on research participation rates, barriers, and motivators among undergraduate students across Bangladesh.</p>
+          <div class="p2r-tags"><span>Higher Education</span><span>Research Culture</span><span>Bangladesh</span></div>
+          <div class="p2r-footer">
+            <div class="p2r-team"><i class="fas fa-users"></i> 4 Researchers</div>
+            <div class="p2r-category"><i class="fas fa-tag"></i> Education Research</div>
+          </div>
+          <div class="p2r-view-hint"><i class="fas fa-eye"></i> View Details</div>
+        </div>
+        <div class="proj2-card-r reveal" data-project="digital-tools" onclick="openProjectModal('digital-tools')" style="cursor:pointer">
+          <div class="p2r-header">
+            <div class="p2r-status ongoing"><i class="fas fa-circle"></i> Ongoing</div>
+            <div class="p2r-year">2024–2025</div>
+          </div>
+          <h3>Digital Tools for Academic Research: Adoption &amp; Impact</h3>
+          <p>Evaluating the adoption of digital research tools (Zotero, SPSS, R) among Bangladeshi academics and measuring effectiveness.</p>
+          <div class="p2r-tags"><span>Digital Tools</span><span>SPSS</span><span>R</span><span>Zotero</span></div>
+          <div class="p2r-footer">
+            <div class="p2r-team"><i class="fas fa-users"></i> 3 Researchers</div>
+            <div class="p2r-category"><i class="fas fa-tag"></i> Technology Research</div>
+          </div>
+          <div class="p2r-view-hint"><i class="fas fa-eye"></i> View Details</div>
+        </div>
+        <div class="proj2-card-r reveal" data-project="evidence-healthcare" onclick="openProjectModal('evidence-healthcare')" style="cursor:pointer">
+          <div class="p2r-header">
+            <div class="p2r-status ongoing"><i class="fas fa-circle"></i> Ongoing</div>
+            <div class="p2r-year">2023–2025</div>
+          </div>
+          <h3>Evidence-Based Practice in Healthcare Settings</h3>
+          <p>Assessment of evidence-based practice adoption among healthcare professionals in clinical and community health settings.</p>
+          <div class="p2r-tags"><span>Healthcare</span><span>Evidence-Based</span><span>Clinical</span></div>
+          <div class="p2r-footer">
+            <div class="p2r-team"><i class="fas fa-users"></i> 5 Researchers</div>
+            <div class="p2r-category"><i class="fas fa-tag"></i> Health Research</div>
+          </div>
+          <div class="p2r-view-hint"><i class="fas fa-eye"></i> View Details</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="proj-tab-content hidden" id="completed">
+      <div class="proj2-grid-research">
+        <div class="proj2-card-r reveal" data-project="barriers-graduate" onclick="openProjectModal('barriers-graduate')" style="cursor:pointer">
+          <div class="p2r-header">
+            <div class="p2r-status completed"><i class="fas fa-check-circle"></i> Completed</div>
+            <div class="p2r-year">2023</div>
+          </div>
+          <h3>Barriers to Research Participation Among Graduate Students</h3>
+          <p>A comprehensive survey study identifying key barriers to research engagement in Bangladeshi universities with actionable recommendations.</p>
+          <div class="p2r-tags"><span>Survey Study</span><span>Graduate Students</span><span>Barriers</span></div>
+          <div class="p2r-footer">
+            <div class="p2r-team"><i class="fas fa-users"></i> 4 Researchers</div>
+            <div class="p2r-category"><i class="fas fa-tag"></i> Education Research</div>
+          </div>
+          <div class="p2r-view-hint"><i class="fas fa-eye"></i> View Details</div>
+        </div>
+        <div class="proj2-card-r reveal" data-project="spss-curriculum" onclick="openProjectModal('spss-curriculum')" style="cursor:pointer">
+          <div class="p2r-header">
+            <div class="p2r-status completed"><i class="fas fa-check-circle"></i> Completed</div>
+            <div class="p2r-year">2023</div>
+          </div>
+          <h3>Introduction of SPSS Training in Academic Curriculum</h3>
+          <p>Pilot program evaluating the impact of SPSS training on student research capacity and academic output quality.</p>
+          <div class="p2r-tags"><span>SPSS</span><span>Curriculum</span><span>Capacity Building</span></div>
+          <div class="p2r-footer">
+            <div class="p2r-team"><i class="fas fa-users"></i> 3 Researchers</div>
+            <div class="p2r-category"><i class="fas fa-tag"></i> Training Research</div>
+          </div>
+          <div class="p2r-view-hint"><i class="fas fa-eye"></i> View Details</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="proj-tab-content hidden" id="upcoming">
+      <div class="proj2-grid-research">
+        <div class="proj2-card-r reveal" data-project="ai-research" onclick="openProjectModal('ai-research')" style="cursor:pointer">
+          <div class="p2r-header">
+            <div class="p2r-status upcoming-s"><i class="fas fa-hourglass-half"></i> Upcoming</div>
+            <div class="p2r-year">2025–2026</div>
+          </div>
+          <h3>AI &amp; Machine Learning in Academic Research</h3>
+          <p>Exploring the intersection of AI tools and academic research workflows in South Asia, with focus on automation and productivity.</p>
+          <div class="p2r-tags"><span>AI</span><span>Machine Learning</span><span>Research Automation</span></div>
+          <div class="p2r-footer">
+            <div class="p2r-team"><i class="fas fa-users"></i> Planning Phase</div>
+            <div class="p2r-category"><i class="fas fa-tag"></i> AI Research</div>
+          </div>
+          <div class="p2r-view-hint"><i class="fas fa-eye"></i> View Details</div>
+        </div>
+        <div class="proj2-card-r reveal" data-project="open-access" onclick="openProjectModal('open-access')" style="cursor:pointer">
+          <div class="p2r-header">
+            <div class="p2r-status upcoming-s"><i class="fas fa-hourglass-half"></i> Upcoming</div>
+            <div class="p2r-year">2025</div>
+          </div>
+          <h3>Open Access Research Initiative</h3>
+          <p>Promoting open-access publishing and research dissemination across Bangladeshi institutions and beyond.</p>
+          <div class="p2r-tags"><span>Open Access</span><span>Publishing</span><span>Dissemination</span></div>
+          <div class="p2r-footer">
+            <div class="p2r-team"><i class="fas fa-users"></i> Forming Team</div>
+            <div class="p2r-category"><i class="fas fa-tag"></i> Open Science</div>
+          </div>
+          <div class="p2r-view-hint"><i class="fas fa-eye"></i> View Details</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PUBLICATIONS SECTION -->
+  <div class="dark-section">
+    <div class="section-wrap" style="padding-top:0;padding-bottom:0">
+      <div style="padding-top:6rem;padding-bottom:6rem">
+
+        <div class="rh-section-label reveal" style="margin-bottom:3rem">
+          <div class="rsl-icon pub-icon"><i class="fas fa-file-alt"></i></div>
+          <div>
+            <h2>Scholarly Publications Library</h2>
+            <p>Peer-reviewed literature originating directly from ARI mentorship frameworks.</p>
+          </div>
+        </div>
+
+        <!-- Publication Type Filter -->
+        <div class="pub-filter-bar reveal">
+          <button class="pub-ftab active" data-pubfilter="all">All Publications</button>
+          <button class="pub-ftab" data-pubfilter="Research Paper">Research Papers</button>
+          <button class="pub-ftab" data-pubfilter="Abstract Paper">Abstract Papers</button>
+          <button class="pub-ftab" data-pubfilter="Conference Paper">Conference Papers</button>
+        </div>
+
+        <div class="pub2-list" id="pub2List">
+          <div class="pub2-item reveal" data-pubtype="Research Paper">
+            <div class="pub2-left">
+              <div class="pub2-type rp">Research Paper</div>
+              <div class="pub2-year">2024</div>
+            </div>
+            <div class="pub2-body">
+              <h4>Promoting Research Culture: Challenges and Strategies for Bangladeshi Universities</h4>
+              <p class="pub2-authors"><i class="fas fa-user-edit"></i> Rukon, M.R., Hossain, M.A., et al. — <em>ARI Research Journal, 2024</em></p>
+              <div class="pub2-tags"><span>Research Culture</span><span>Higher Education</span><span>Bangladesh</span></div>
+            </div>
+            <div class="pub2-actions">
+              <button class="pub2-btn" onclick="openAbstractModal('Promoting Research Culture: Challenges and Strategies for Bangladeshi Universities','This research examines the current state of research culture in Bangladeshi universities, identifying key challenges including lack of funding, insufficient mentorship, and limited access to academic resources. The study proposes evidence-based strategies for fostering research participation among students and faculty, drawing on data from multiple institutions across Bangladesh. Findings suggest that structured training programs, peer mentorship, and institutional support significantly increase research output.')">Abstract</button>
+              <a href="https://doi.org/10.0000/ari.2024.001" target="_blank" rel="noopener noreferrer" class="pub2-read-btn"><i class="fas fa-external-link-alt"></i> Full Article</a>
+            </div>
+          </div>
+
+          <div class="pub2-item reveal" data-pubtype="Conference Paper">
+            <div class="pub2-left">
+              <div class="pub2-type cp">Conference Paper</div>
+              <div class="pub2-year">2024</div>
+            </div>
+            <div class="pub2-body">
+              <h4>SPSS as a Tool for Research Capacity Building: A Case Study</h4>
+              <p class="pub2-authors"><i class="fas fa-user-edit"></i> Hossain, M.A., Dev Sharma, S.K. — <em>International Conference on Research Methods, 2024</em></p>
+              <div class="pub2-tags"><span>SPSS</span><span>Training</span><span>Capacity Building</span></div>
+            </div>
+            <div class="pub2-actions">
+              <button class="pub2-btn" onclick="openAbstractModal('SPSS as a Tool for Research Capacity Building: A Case Study','This case study presents findings from a pilot SPSS training initiative conducted across three Bangladeshi universities. The study evaluates the impact of structured SPSS workshops on student research competency, measuring pre- and post-training skill assessments. Results demonstrate a statistically significant improvement in data analysis capabilities, with 87% of participants reporting increased confidence in conducting independent quantitative research.')">Abstract</button>
+              <a href="https://doi.org/10.0000/ari.2024.002" target="_blank" rel="noopener noreferrer" class="pub2-read-btn"><i class="fas fa-external-link-alt"></i> Full Article</a>
+            </div>
+          </div>
+
+          <div class="pub2-item reveal" data-pubtype="Abstract Paper">
+            <div class="pub2-left">
+              <div class="pub2-type ap">Abstract Paper</div>
+              <div class="pub2-year">2023</div>
+            </div>
+            <div class="pub2-body">
+              <h4>Evidence-Based Research Practices in Healthcare: A Systematic Review</h4>
+              <p class="pub2-authors"><i class="fas fa-user-edit"></i> Chakma, F., Hossain, M. — <em>ARI Research Bulletin, 2023</em></p>
+              <div class="pub2-tags"><span>Healthcare</span><span>Evidence-Based</span><span>Systematic Review</span></div>
+            </div>
+            <div class="pub2-actions">
+              <button class="pub2-btn" onclick="openAbstractModal('Evidence-Based Research Practices in Healthcare: A Systematic Review','This systematic review synthesizes existing literature on evidence-based practice adoption in Bangladeshi healthcare settings. Reviewing 42 studies published between 2015 and 2023, the authors identify critical gaps in EBP implementation including training deficiencies, resource constraints, and organizational barriers. The review provides a framework for improving evidence-based decision-making among clinical practitioners.')">Abstract</button>
+              <a href="https://doi.org/10.0000/ari.2023.001" target="_blank" rel="noopener noreferrer" class="pub2-read-btn"><i class="fas fa-external-link-alt"></i> Full Article</a>
+            </div>
+          </div>
+
+          <div class="pub2-item reveal" data-pubtype="Research Paper">
+            <div class="pub2-left">
+              <div class="pub2-type rp">Research Paper</div>
+              <div class="pub2-year">2024</div>
+            </div>
+            <div class="pub2-body">
+              <h4>Digital Referencing Tools in Academic Research: Adoption Patterns</h4>
+              <p class="pub2-authors"><i class="fas fa-user-edit"></i> Rukon, M.R., Chakma, F. — <em>Journal of Research Education, 2024</em></p>
+              <div class="pub2-tags"><span>Zotero</span><span>Mendeley</span><span>Academic Tools</span></div>
+            </div>
+            <div class="pub2-actions">
+              <button class="pub2-btn" onclick="openAbstractModal('Digital Referencing Tools in Academic Research: Adoption Patterns','This study investigates adoption patterns of digital referencing tools—specifically Zotero and Mendeley—among Bangladeshi academic researchers. Survey data from 215 respondents across 12 universities reveals that while awareness of referencing tools is moderate, active utilization remains low due to limited training and institutional support. The paper recommends integrating reference management training into academic curricula to improve research quality and citation accuracy.')">Abstract</button>
+              <a href="https://doi.org/10.0000/ari.2024.003" target="_blank" rel="noopener noreferrer" class="pub2-read-btn"><i class="fas fa-external-link-alt"></i> Full Article</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABSTRACT MODAL -->
+<div id="abstractModal" class="modal-overlay" role="dialog" aria-modal="true">
+  <div class="modal-box abstract-modal-box">
+    <button class="modal-close" id="abstractModalClose" aria-label="Close"><i class="fas fa-times"></i></button>
+    <div class="modal-icon pub-modal-icon"><i class="fas fa-file-alt"></i></div>
+    <h3 id="abstractModalTitle" style="font-size:1.05rem;line-height:1.5;margin-bottom:.75rem"></h3>
+    <div class="abstract-modal-divider"></div>
+    <p style="font-size:.85rem;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:.75rem">Abstract</p>
+    <p id="abstractModalContent" style="color:var(--text-muted);font-size:.9rem;line-height:1.9"></p>
+    <div style="margin-top:1.5rem;text-align:center">
+      <button onclick="document.getElementById('abstractModal').classList.remove('open');document.body.style.overflow='';document.body.classList.remove('modal-open')" class="btn-ghost" style="padding:.5rem 1.5rem;font-size:.85rem">Close</button>
+    </div>
+  </div>
+</div>
+
+<!-- PAGE: SERVICES -->
+<section id="services" class="page">
+  <div class="page-hero">
+    <div class="orb orb-1"></div><div class="orb orb-2"></div>
+    <div class="ph-content">
+      <span class="section-tag">Support</span>
+      <h1>Our <span class="gradient-text">Services</span></h1>
+      <p>Comprehensive research support from consultation to publication.</p>
+    </div>
+  </div>
+  <div class="section-wrap">
+    <div class="services-grid">
+      <div class="svc-card reveal"><div class="svc-icon"><i class="fas fa-comments-dollar"></i></div><h3>Research Consultation</h3><p>One-on-one expert consultation to define, refine, and plan your research project from conception to completion.</p></div>
+      <div class="svc-card reveal"><div class="svc-icon"><i class="fas fa-chart-line"></i></div><h3>Data Analysis Support</h3><p>End-to-end data analysis support using SPSS, R, Stata, and Python for academic and professional research.</p></div>
+      <div class="svc-card reveal"><div class="svc-icon"><i class="fas fa-file-alt"></i></div><h3>Research Paper Writing Help</h3><p>Professional guidance on structuring, writing, and editing research papers for journal submission.</p></div>
+      <div class="svc-card reveal"><div class="svc-icon"><i class="fas fa-graduation-cap"></i></div><h3>Thesis &amp; Dissertation Guidance</h3><p>Comprehensive support for thesis and dissertation projects—from proposal to final defense.</p></div>
+      <div class="svc-card reveal"><div class="svc-icon"><i class="fas fa-calculator"></i></div><h3>Statistical Analysis</h3><p>Advanced statistical analysis, interpretation, and reporting for quantitative research projects.</p></div>
+      <div class="svc-card reveal"><div class="svc-icon"><i class="fas fa-laptop-code"></i></div><h3>SPSS / R / Stata Support</h3><p>Hands-on tool support and training sessions tailored to your specific software needs.</p></div>
+      <div class="svc-card reveal"><div class="svc-icon"><i class="fas fa-pencil-alt"></i></div><h3>Report Writing Assistance</h3><p>Expert assistance in drafting, structuring, and polishing academic and research reports.</p></div>
+      <div class="svc-card reveal"><div class="svc-icon"><i class="fas fa-upload"></i></div><h3>Publication Support</h3><p>Guide researchers through the journal selection, submission, and revision process.</p></div>
+      <div class="svc-card reveal"><div class="svc-icon"><i class="fas fa-clipboard-check"></i></div><h3>Survey Design &amp; Methodology</h3><p>Design effective surveys, questionnaires, and research instruments with proper validity and reliability checks.</p></div>
+      <div class="svc-card reveal"><div class="svc-icon"><i class="fas fa-chalkboard-teacher"></i></div><h3>Academic Mentorship</h3><p>Ongoing mentorship for early-career researchers navigating academia and professional research.</p></div>
+      <div class="svc-card reveal"><div class="svc-icon"><i class="fas fa-layer-group"></i></div><h3>Research Training Programs</h3><p>Structured group training programs from beginner to advanced levels across multiple research domains.</p></div>
+      <div class="svc-card reveal svc-card-ngo"><div class="svc-icon ngo-icon"><i class="fas fa-hands-helping"></i></div><h3>NGO Research Projects</h3><p>End-to-end research support for NGOs and development organizations — needs assessments, baseline surveys, impact evaluations, and policy briefs tailored to your mission and donor reporting requirements.</p><div class="svc-ngo-tags"><span><i class="fas fa-check-circle"></i> Needs Assessment</span><span><i class="fas fa-check-circle"></i> Baseline &amp; Endline Surveys</span><span><i class="fas fa-check-circle"></i> Impact Evaluation</span><span><i class="fas fa-check-circle"></i> Policy &amp; Advocacy Briefs</span><span><i class="fas fa-check-circle"></i> M&amp;E Framework Design</span><span><i class="fas fa-check-circle"></i> Donor Report Writing</span></div></div>
+    </div>
+    <div class="svc-cta reveal">
+      <h3>Need a specific service?</h3>
+      <p>Get in touch with us and we'll create a tailored solution for your research needs.</p>
+      <a href="mailto:research.ari.bd@gmail.com" class="btn-primary">research.ari.bd@gmail.com <i class="fas fa-envelope"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- PAGE: MEDIA -->
+<section id="media" class="page">
+  <!-- HERO BANNER -->
+  <div class="media-hero">
+    <div class="orb orb-1"></div><div class="orb orb-2"></div>
+    <div class="media-hero-content">
+      <span class="section-tag">Community Updates</span>
+      <h1>Media, Blog &amp; <span class="gradient-text">Gallery</span></h1>
+      <p>Stay up-to-date with recent announcements, read our academic methodology blog posts, and view event snapshots.</p>
+    </div>
+  </div>
+
+  <!-- CATEGORY TABS -->
+  <div class="media-tab-bar">
+    <div class="media-tabs-inner">
+      <button class="med-tab active" data-med="all">All Content</button>
+      <button class="med-tab" data-med="blog">Research Blog</button>
+      <button class="med-tab" data-med="news">News Updates</button>
+      <button class="med-tab" data-med="notice">Notice Board</button>
+      <button class="med-tab" data-med="gallery">Photo Gallery</button>
+    </div>
+  </div>
+
+  <!-- BLOG SECTION -->
+  <div class="media-section-wrap med-section" data-medsec="blog">
+    <div class="media-section-label reveal">
+      <div class="msl-icon blog-icon"><i class="fas fa-file-alt"></i></div>
+      <div>
+        <h2>Research Blog &amp; Insights</h2>
+        <p>Expert perspectives on research methodology, tools, and academic writing.</p>
+      </div>
+    </div>
+    <div class="blog2-grid">
+      <div class="blog2-card reveal" data-article="blog1">
+        <div class="b2c-img"><i class="fas fa-lightbulb"></i></div>
+        <div class="b2c-body">
+          <div class="b2c-meta">
+            <span class="b2c-cat">Research Tips</span>
+            <span class="b2c-date"><i class="fas fa-calendar"></i> May 2025</span>
+          </div>
+          <h3>10 Essential Steps to Writing a Strong Research Proposal</h3>
+          <p>A comprehensive guide to structuring your research proposal for maximum impact and approval success.</p>
+          <div class="b2c-author"><i class="fas fa-user-circle"></i> ARI Team</div>
+          <button class="b2c-read" data-article="blog1">Read Complete Article <i class="fas fa-arrow-right"></i></button>
+        </div>
+      </div>
+      <div class="blog2-card reveal" data-article="blog2">
+        <div class="b2c-img analytics"><i class="fas fa-chart-line"></i></div>
+        <div class="b2c-body">
+          <div class="b2c-meta">
+            <span class="b2c-cat">Data Analysis</span>
+            <span class="b2c-date"><i class="fas fa-calendar"></i> April 2025</span>
+          </div>
+          <h3>Why SPSS Remains Essential for Social Science Research</h3>
+          <p>Exploring the enduring relevance of SPSS in academic research and why researchers should master it.</p>
+          <div class="b2c-author"><i class="fas fa-user-circle"></i> ARI Team</div>
+          <button class="b2c-read" data-article="blog2">Read Complete Article <i class="fas fa-arrow-right"></i></button>
+        </div>
+      </div>
+      <div class="blog2-card reveal" data-article="blog3">
+        <div class="b2c-img publication"><i class="fas fa-upload"></i></div>
+        <div class="b2c-body">
+          <div class="b2c-meta">
+            <span class="b2c-cat">Publication</span>
+            <span class="b2c-date"><i class="fas fa-calendar"></i> March 2025</span>
+          </div>
+          <h3>How to Choose the Right Journal for Your Research Paper</h3>
+          <p>A strategic guide to selecting the best-fit journal for publishing your academic research work.</p>
+          <div class="b2c-author"><i class="fas fa-user-circle"></i> ARI Team</div>
+          <button class="b2c-read" data-article="blog3">Read Complete Article <i class="fas fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NEWS SECTION -->
+  <div class="dark-section med-section" data-medsec="news">
+    <div class="media-section-wrap" style="padding-top:0;padding-bottom:0">
+      <div style="padding-top:5rem;padding-bottom:5rem">
+        <div class="media-section-label reveal">
+          <div class="msl-icon news-icon"><i class="fas fa-newspaper"></i></div>
+          <div>
+            <h2>Recent News Updates</h2>
+            <p>Latest activities and developments at ARI.</p>
+          </div>
+        </div>
+        <div class="news2-grid">
+          <div class="news2-card reveal news2-card-clickable" data-news="news1" role="button" tabindex="0" aria-label="Read full story: ARI Launches New Research Training Cycle">
+            <div class="n2c-icon"><i class="fas fa-graduation-cap"></i></div>
+            <div class="n2c-body">
+              <span class="n2c-date">15 May 2025</span>
+              <h4>ARI Launches New Research Training Cycle</h4>
+              <p>A new cycle of structured research training programs has been announced for June–August 2025, covering SPSS, R, Stata, and academic writing for university students and professionals across Bangladesh.</p>
+              <div class="n2c-read-more"><i class="fas fa-arrow-right"></i> Read Full Story</div>
+            </div>
+          </div>
+          <div class="news2-card reveal news2-card-clickable" data-news="news2" role="button" tabindex="0" aria-label="Read full story: ARI Expands Publication Support Program">
+            <div class="n2c-icon"><i class="fas fa-handshake"></i></div>
+            <div class="n2c-body">
+              <span class="n2c-date">3 April 2025</span>
+              <h4>ARI Expands Publication Support Program</h4>
+              <p>ARI has expanded its publication support services to include end-to-end journal submission assistance for Scopus and ISI-indexed journals, with free initial consultation for eligible researchers.</p>
+              <div class="n2c-read-more"><i class="fas fa-arrow-right"></i> Read Full Story</div>
+            </div>
+          </div>
+          <div class="news2-card reveal news2-card-clickable" data-news="news3" role="button" tabindex="0" aria-label="Read full story: New Cohort of Research Interns Joins ARI">
+            <div class="n2c-icon"><i class="fas fa-users"></i></div>
+            <div class="n2c-body">
+              <span class="n2c-date">18 March 2025</span>
+              <h4>New Cohort of Research Interns Joins ARI</h4>
+              <p>ARI welcomed a new cohort of dedicated research interns joining the team in data analysis, publication support, methodology, and outreach roles for the 2025 academic year.</p>
+              <div class="n2c-read-more"><i class="fas fa-arrow-right"></i> Read Full Story</div>
+            </div>
+          </div>
+          <div class="news2-card reveal news2-card-clickable" data-news="news4" role="button" tabindex="0" aria-label="Read full story: ARI Researchers Present at International Conference">
+            <div class="n2c-icon"><i class="fas fa-trophy"></i></div>
+            <div class="n2c-body">
+              <span class="n2c-date">7 February 2025</span>
+              <h4>ARI Researchers Present at International Conference</h4>
+              <p>ARI co-founders and researchers presented findings on research capacity building and digital tool adoption at an international research methods conference, receiving positive academic recognition.</p>
+              <div class="n2c-read-more"><i class="fas fa-arrow-right"></i> Read Full Story</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NOTICE BOARD -->
+  <div class="media-section-wrap med-section" data-medsec="notice">
+    <div class="media-section-label reveal">
+      <div class="msl-icon notice-icon"><i class="fas fa-bell"></i></div>
+      <div>
+        <h2>Official Notice Board</h2>
+        <p>Active announcements and official communications from ARI.</p>
+      </div>
+    </div>
+    <div class="notice2-list">
+      <div class="notice2-item reveal active-notice" data-notice="n1">
+        <div class="n2i-left">
+          <span class="n2i-badge active">Active</span>
+          <span class="n2i-date">June 2025</span>
+        </div>
+        <div class="n2i-body">
+          <h4>New Batch: IBM SPSS Training — Registration Open</h4>
+          <p>A new batch of IBM SPSS &amp; Research-Ready Data Analysis training is now accepting registrations. Limited seats available. Certificate provided upon completion.</p>
+        </div>
+        <button class="n2i-btn" data-notice="n1">View Details <i class="fas fa-chevron-right"></i></button>
+      </div>
+      <div class="notice2-item reveal active-notice" data-notice="n2">
+        <div class="n2i-left">
+          <span class="n2i-badge active">Active</span>
+          <span class="n2i-date">June 2025</span>
+        </div>
+        <div class="n2i-body">
+          <h4>Academic Writing Workshop — 3-Day Intensive Program</h4>
+          <p>ARI's comprehensive Academic Writing Workshop is scheduled for June 2025. The program covers structure, citation, literature review, and publication readiness.</p>
+        </div>
+        <button class="n2i-btn" data-notice="n2">View Details <i class="fas fa-chevron-right"></i></button>
+      </div>
+      <div class="notice2-item reveal" data-notice="n3">
+        <div class="n2i-left">
+          <span class="n2i-badge">Notice</span>
+          <span class="n2i-date">May 2025</span>
+        </div>
+        <div class="n2i-body">
+          <h4>ARI Internship Applications Open</h4>
+          <p>Research assistant positions are now open for motivated students and early-career researchers. Applications accepted via email with CV and cover letter.</p>
+        </div>
+        <button class="n2i-btn" data-notice="n3">View Details <i class="fas fa-chevron-right"></i></button>
+      </div>
+      <div class="notice2-item reveal" data-notice="n4">
+        <div class="n2i-left">
+          <span class="n2i-badge">Notice</span>
+          <span class="n2i-date">April 2025</span>
+        </div>
+        <div class="n2i-body">
+          <h4>Publication Support Drive — Free Initial Consultation</h4>
+          <p>ARI is offering free initial consultation sessions for researchers seeking guidance on journal submission, manuscript formatting, and peer review response.</p>
+        </div>
+        <button class="n2i-btn" data-notice="n4">View Details <i class="fas fa-chevron-right"></i></button>
+      </div>
+      <div class="notice2-item reveal" data-notice="n5">
+        <div class="n2i-left">
+          <span class="n2i-badge">Notice</span>
+          <span class="n2i-date">March 2025</span>
+        </div>
+        <div class="n2i-body">
+          <h4>R Programming Workshop — Beginner-Friendly, Certificate Provided</h4>
+          <p>An R Programming Workshop for data analysis has been scheduled for March 2025. No prior programming experience required. Participation certificate awarded to all attendees.</p>
+        </div>
+        <button class="n2i-btn" data-notice="n5">View Details <i class="fas fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- GALLERY -->
+  <div class="dark-section med-section" data-medsec="gallery">
+    <div class="media-section-wrap" style="padding-top:0;padding-bottom:0">
+      <div style="padding-top:5rem;padding-bottom:5rem">
+        <div class="media-section-label reveal">
+          <div class="msl-icon gallery-icon"><i class="fas fa-images"></i></div>
+          <div>
+            <h2>ARI Snapshot Gallery</h2>
+            <p>Moments captured from our training sessions, workshops, and academic events.</p>
+          </div>
+        </div>
+        <div class="gallery2-grid reveal">
+          <div class="gallery2-item g2-large" onclick="openGalleryModal('g1')">
+            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80" alt="SPSS Research Training Session" class="g2i-photo">
+            <div class="g2i-overlay"><span class="g2i-cat">Training</span><span class="g2i-title">SPSS Research Training Session</span></div>
+          </div>
+          <div class="gallery2-item" onclick="openGalleryModal('g2')">
+            <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=600&q=80" alt="Data Analysis Workshop" class="g2i-photo">
+            <div class="g2i-overlay"><span class="g2i-cat">Workshop</span><span class="g2i-title">Data Analysis Workshop</span></div>
+          </div>
+          <div class="gallery2-item" onclick="openGalleryModal('g3')">
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&q=80" alt="Research Team Collaboration" class="g2i-photo">
+            <div class="g2i-overlay"><span class="g2i-cat">Team</span><span class="g2i-title">Team Collaboration</span></div>
+          </div>
+          <div class="gallery2-item g2-wide" onclick="openGalleryModal('g4')">
+            <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=900&q=80" alt="International Research Conference" class="g2i-photo">
+            <div class="g2i-overlay"><span class="g2i-cat">Conference</span><span class="g2i-title">International Research Conference</span></div>
+          </div>
+          <div class="gallery2-item" onclick="openGalleryModal('g5')">
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&q=80" alt="Statistical Methods Lab" class="g2i-photo">
+            <div class="g2i-overlay"><span class="g2i-cat">Lab</span><span class="g2i-title">Statistical Methods Lab</span></div>
+          </div>
+          <div class="gallery2-item" onclick="openGalleryModal('g6')">
+            <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&q=80" alt="Academic Writing Seminar" class="g2i-photo">
+            <div class="g2i-overlay"><span class="g2i-cat">Seminar</span><span class="g2i-title">Academic Writing Seminar</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWS DETAIL MODAL -->
+<div id="newsModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="newsModalTitle">
+  <div class="modal-box news-modal-box">
+    <button class="modal-close" id="newsModalClose" aria-label="Close"><i class="fas fa-times"></i></button>
+    <div class="news-modal-header">
+      <div class="news-modal-icon" id="newsModalIcon"><i class="fas fa-newspaper"></i></div>
+      <div class="news-modal-meta">
+        <span class="news-modal-cat" id="newsModalCat"></span>
+        <span class="news-modal-date" id="newsModalDate"><i class="fas fa-calendar"></i> <span id="newsModalDateText"></span></span>
+      </div>
+    </div>
+    <h3 id="newsModalTitle" class="news-modal-title"></h3>
+    <div class="abstract-modal-divider"></div>
+    <div id="newsModalContent" class="news-modal-content"></div>
+    <div class="news-modal-tags" id="newsModalTags"></div>
+    <div class="news-modal-footer">
+      <a href="mailto:research.ari.bd@gmail.com" class="btn-primary" style="font-size:.85rem;padding:.55rem 1.4rem">Contact ARI <i class="fas fa-envelope"></i></a>
+      <button onclick="document.getElementById('newsModal').classList.remove('open');document.body.style.overflow='';document.body.classList.remove('modal-open')" class="btn-ghost" style="font-size:.85rem;padding:.55rem 1.4rem">Close</button>
+    </div>
+  </div>
+</div>
+
+<!-- ARTICLE / NOTICE DETAIL MODAL -->
+<div id="articleModal" class="modal-overlay" role="dialog" aria-modal="true">
+  <div class="modal-box article-modal-box">
+    <button class="modal-close" id="articleModalClose" aria-label="Close"><i class="fas fa-times"></i></button>
+    <div class="modal-icon" id="articleModalIcon"><i class="fas fa-file-alt"></i></div>
+    <span class="article-modal-cat" id="articleModalCat"></span>
+    <h3 id="articleModalTitle" style="font-size:1.1rem;line-height:1.5;margin-bottom:1rem"></h3>
+    <div class="abstract-modal-divider"></div>
+    <div id="articleModalContent" style="color:var(--text-muted);font-size:.9rem;line-height:1.9;margin-top:1rem"></div>
+    <div style="margin-top:1.5rem;text-align:center">
+      <button onclick="document.getElementById('articleModal').classList.remove('open');document.body.style.overflow='';document.body.classList.remove('modal-open')" class="btn-ghost" style="padding:.5rem 1.5rem;font-size:.85rem">Close</button>
+    </div>
+  </div>
+</div>
+
+<!-- PAGE: CONTACT -->
+<section id="contact" class="page">
+  <div class="page-hero">
+    <div class="orb orb-1"></div><div class="orb orb-2"></div>
+    <div class="ph-content">
+      <span class="section-tag">Get In Touch</span>
+      <h1>Contact <span class="gradient-text">ARI</span></h1>
+      <p>Have a question or want to collaborate? We'd love to hear from you.</p>
+    </div>
+  </div>
+
+  <div class="section-wrap">
+    <div class="contact-wrap">
+      <div class="contact-info reveal">
+        <h2>Let's Connect</h2>
+        <p style="color:var(--text-muted);margin-top:1rem;line-height:1.9">Whether you're a student, researcher, or institution looking to collaborate, ARI is here to support your research journey.</p>
+        <div class="ci-block"><div class="ci-icon"><i class="fas fa-envelope"></i></div><div><h4>Email Us</h4><a href="mailto:research.ari.bd@gmail.com">research.ari.bd@gmail.com</a></div></div>
+        <div class="ci-block"><div class="ci-icon"><i class="fas fa-map-marker-alt"></i></div><div><h4>Location</h4><p style="color:var(--text-muted)">Level 8, Noakhali Tower<br>Noakhali, Bangladesh</p></div></div>
+        <div class="ci-block"><div class="ci-icon"><i class="fas fa-clock"></i></div><div><h4>Response Time</h4><p style="color:var(--text-muted)">Within 24–48 hours</p></div></div>
+        <div class="ci-social">
+          <h4 style="margin-bottom:1rem">Follow ARI</h4>
+          <div class="social-links">
+            <a href="#" class="social-btn fb" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-btn li" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-btn gh" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" class="social-btn yt" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form-wrap reveal">
+        <form id="contactForm" class="contact-form" onsubmit="handleFormSubmit(event)">
+          <div class="form-row">
+            <div class="form-group"><label>Full Name</label><input type="text" placeholder="Your full name" required></div>
+            <div class="form-group"><label>Email Address</label><input type="email" placeholder="your@email.com" required></div>
+          </div>
+          <div class="form-group">
+            <label>Subject</label>
+            <div class="custom-select-wrap">
+              <div class="custom-select" id="subjectSelect">
+                <div class="cs-selected"><span>Research Consultation</span><i class="fas fa-chevron-down cs-arrow"></i></div>
+                <div class="cs-options">
+                  <div class="cs-option active">Research Consultation</div>
+                  <div class="cs-option">Program Enrollment</div>
+                  <div class="cs-option">Publication Support</div>
+                  <div class="cs-option">Collaboration</div>
+                  <div class="cs-option">General Inquiry</div>
+                </div>
+              </div>
+              <input type="hidden" name="subject" id="subjectHidden" value="Research Consultation">
+            </div>
+          </div>
+          <div class="form-group"><label>Message</label><textarea rows="5" placeholder="How can ARI help you?" required></textarea></div>
+          <button type="submit" class="btn-primary" style="width:100%">Send Message <i class="fas fa-paper-plane"></i></button>
+        </form>
+        <div id="formSuccess" class="form-success hidden">
+          <i class="fas fa-check-circle"></i>
+          <h3>Message Received!</h3>
+          <p>Thank you for reaching out. ARI will respond to <strong>research.ari.bd@gmail.com</strong> shortly.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="map-section reveal">
+    <div class="section-header" style="margin-bottom:2rem">
+      <span class="section-tag">Find Us</span>
+      <h2>Our Location</h2>
+      <p>Level 8, Noakhali Tower, Noakhali — serving researchers across Bangladesh and beyond.</p>
+    </div>
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.3897286024!2d90.39921737598775!3d23.750886987898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa563bbdd5904c2!2sNoakhali%20Tower%2C%20Noakhali%2C%20Bangladesh!5e0!3m2!1sen!2sus!4v1716900000000!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="ARI Location - Noakhali Tower"></iframe>
+      <div class="map-overlay-card">
+        <div class="ci-icon" style="margin-bottom:.75rem"><i class="fas fa-map-marker-alt"></i></div>
+        <strong>ARI – Advanced Research &amp; Innovation</strong>
+        <p style="color:var(--text-muted);font-size:.85rem;margin-top:.25rem">Level 8, Noakhali Tower</p>
+        <p style="color:var(--text-muted);font-size:.82rem">Noakhali, Bangladesh</p>
+        <a href="https://maps.app.goo.gl/ecm5y2bS1nRm1LiT8" target="_blank" rel="noopener noreferrer" class="btn-primary" style="margin-top:1rem;padding:.5rem 1rem;font-size:.8rem">Open in Maps <i class="fas fa-external-link-alt"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="dark-section">
+    <div class="section-wrap" style="padding-top:0;padding-bottom:0">
+      <div style="padding-top:6rem;padding-bottom:6rem">
+        <div class="section-header reveal"><span class="section-tag">FAQ</span><h2>Frequently Asked Questions</h2></div>
+        <div class="faq-list reveal">
+          <div class="faq-item"><div class="faq-q">Who can benefit from ARI's programs? <i class="fas fa-chevron-down"></i></div><div class="faq-a">ARI serves university students, teachers, doctors, thesis students, and professional researchers at all levels—from beginners to advanced scholars.</div></div>
+          <div class="faq-item"><div class="faq-q">How can I enroll in a training program? <i class="fas fa-chevron-down"></i></div><div class="faq-a">Simply email us at research.ari.bd@gmail.com with your name, the program of interest, and your current level. We'll guide you through the enrollment process.</div></div>
+          <div class="faq-item"><div class="faq-q">Does ARI offer internship opportunities? <i class="fas fa-chevron-down"></i></div><div class="faq-a">Yes! ARI offers research assistant internships for motivated students and early-career researchers. Contact us to learn about current openings.</div></div>
+          <div class="faq-item"><div class="faq-q">Can ARI help with journal publication? <i class="fas fa-chevron-down"></i></div><div class="faq-a">Absolutely. ARI provides end-to-end publication support—from journal selection to submission, peer review response, and final acceptance.</div></div>
+          <div class="faq-item"><div class="faq-q">Are programs available online? <i class="fas fa-chevron-down"></i></div><div class="faq-a">Yes, many of ARI's training programs and workshops are available both in-person and online. Contact us for the current schedule and format options.</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ENROLL MODAL -->
+<div id="enrollModal" class="modal-overlay" role="dialog" aria-modal="true">
+  <div class="modal-box">
+    <button class="modal-close" id="modalClose" aria-label="Close"><i class="fas fa-times"></i></button>
+    <div class="modal-icon"><i class="fas fa-graduation-cap"></i></div>
+    <h3 id="modalTitle">Enroll in Program</h3>
+    <p id="modalDesc">Fill out the form below to register your interest. ARI will get back to you within 24–48 hours.</p>
+    <div id="modalFormWrap"></div>
+    <div id="modalEmailFallback">
+      <p class="modal-email-text">To enroll, contact us directly:</p>
+      <a href="mailto:research.ari.bd@gmail.com?subject=Enrollment: Program Name" id="modalEmailLink" class="btn-primary" style="margin-top:.75rem;display:inline-flex">
+        <i class="fas fa-envelope"></i> research.ari.bd@gmail.com
+      </a>
+      <p class="modal-note">Include your name, program interest, and current level in the email.</p>
+    </div>
+  </div>
+</div>
+
+<!-- FOUNDER PROFILE MODAL -->
+<div id="founderModal" class="modal-overlay founder-modal-overlay" role="dialog" aria-modal="true">
+  <div class="founder-modal-box">
+    <button class="modal-close" id="founderModalClose" aria-label="Close"><i class="fas fa-times"></i></button>
+    <div class="fpm-top">
+      <div class="fpm-avatar fpm-avatar-photo" id="fpmAvatar"><img id="fpmAvatarImg" src="" alt="" class="fpm-avatar-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="fpm-avatar-fallback" id="fpmAvatarFallback"></span></div>
+      <div class="fpm-header-info">
+        <h3 id="fpmName"></h3>
+        <span class="fpm-role" id="fpmRole"></span>
+        <span class="fpm-org">Co-Founder, ARI · Bangladesh</span>
+      </div>
+    </div>
+    <p class="fpm-bio" id="fpmBio"></p>
+    <div class="fpm-details" id="fpmDetails"></div>
+    <div class="fpm-profiles">
+      <h5>Professional Profiles</h5>
+      <div class="fpm-profile-links" id="fpmProfileLinks"></div>
+    </div>
+  </div>
+</div>
+
+<!-- INTERN PROFILE MODAL -->
+<div id="internModal" class="modal-overlay founder-modal-overlay" role="dialog" aria-modal="true">
+  <div class="founder-modal-box">
+    <button class="modal-close" id="internModalClose" aria-label="Close"><i class="fas fa-times"></i></button>
+    <div class="fpm-top">
+      <div class="fpm-avatar fpm-avatar-photo intern-avatar-modal" id="ipmAvatar"><img id="ipmAvatarImg" src="" alt="" class="fpm-avatar-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="fpm-avatar-fallback" id="ipmAvatarFallback"></span></div>
+      <div class="fpm-header-info">
+        <h3 id="ipmName"></h3>
+        <span class="fpm-role" id="ipmRole"></span>
+        <span class="fpm-org">Research Intern, ARI · Bangladesh</span>
+      </div>
+    </div>
+    <p class="fpm-bio" id="ipmBio"></p>
+    <div class="fpm-details" id="ipmDetails"></div>
+    <div class="fpm-profiles">
+      <h5>Contact &amp; Connect</h5>
+      <div class="fpm-profile-links" id="ipmProfileLinks"></div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="footer-logo">
+        <div class="logo-img-wrap footer-logo-img-wrap">
+          <img src="images/logo_ari.png" alt="ARI" class="logo-img" onerror="this.parentElement.classList.add('logo-fallback')">
+          <span class="logo-fallback-text">ARI</span>
+        </div>
+        <span class="logo-text">Advanced Research<br>&amp; Innovation</span>
+      </div>
+      <p class="footer-tagline">Empowering researchers. Advancing knowledge. Building a research-driven society since 2023.</p>
+      <div class="footer-social">
+        <a href="#" class="fsocial fb" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="fsocial li" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="fsocial gh" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="#" class="fsocial yt" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+    <div class="footer-links-col">
+      <h5>Quick Links</h5>
+      <a href="#home" data-page="home">Home</a>
+      <a href="#about" data-page="about">About</a>
+      <a href="#programs" data-page="programs">Programs</a>
+      <a href="#research" data-page="research">Research</a>
+      <a href="#services" data-page="services">Services</a>
+      <a href="#media" data-page="media">Media</a>
+      <a href="#contact" data-page="contact">Contact</a>
+    </div>
+    <div class="footer-links-col">
+      <h5>Services</h5>
+      <a href="#services" data-page="services">Research Consultation</a>
+      <a href="#services" data-page="services">Data Analysis</a>
+      <a href="#services" data-page="services">Thesis Guidance</a>
+      <a href="#services" data-page="services">Publication Support</a>
+      <a href="#services" data-page="services">Statistical Analysis</a>
+      <a href="#services" data-page="services">Academic Mentorship</a>
+    </div>
+    <div class="footer-links-col">
+      <h5>Contact</h5>
+      <a href="mailto:research.ari.bd@gmail.com"><i class="fas fa-envelope"></i> research.ari.bd@gmail.com</a>
+      <p style="color:var(--text-muted);margin-top:.5rem;font-size:.875rem"><i class="fas fa-map-marker-alt"></i> Level 8, Noakhali Tower, Noakhali, Bangladesh</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 | Advanced Research and Innovation (ARI). All rights reserved.</p>
+    <p>Built with passion for research excellence.</p>
+  </div>
+</footer>
+
+<!-- PROJECT DETAIL MODAL -->
+<div id="projectModal" class="modal-overlay" role="dialog" aria-modal="true">
+  <div class="modal-box project-modal-box">
+    <button class="modal-close" id="projectModalClose" aria-label="Close"><i class="fas fa-times"></i></button>
+    <div class="pm-header">
+      <div class="pm-header-meta">
+        <span class="pm-status-badge" id="pmStatus"></span>
+        <span class="pm-year-badge" id="pmYear"></span>
+        <span class="pm-cat-badge" id="pmCategory"></span>
+      </div>
+      <h3 id="pmTitle" style="font-size:1.15rem;line-height:1.5;margin:1rem 0 .75rem"></h3>
+      <p id="pmDesc" style="color:var(--text-muted);font-size:.9rem;line-height:1.8;margin-bottom:1.25rem"></p>
+    </div>
+    <div class="abstract-modal-divider"></div>
+    <div class="pm-section">
+      <h5 class="pm-section-title"><i class="fas fa-flask"></i> Methodology</h5>
+      <div class="pm-methodology" id="pmMethodology"></div>
+    </div>
+    <div class="abstract-modal-divider" style="margin:.75rem 0"></div>
+    <div class="pm-section">
+      <h5 class="pm-section-title"><i class="fas fa-users"></i> Research Team</h5>
+      <div class="pm-researchers" id="pmResearchers"></div>
+    </div>
+    <div style="margin-top:1.5rem;text-align:center">
+      <button onclick="document.getElementById('projectModal').classList.remove('open');document.body.style.overflow='';document.body.classList.remove('modal-open')" class="btn-ghost" style="padding:.5rem 1.5rem;font-size:.85rem">Close</button>
+    </div>
+  </div>
+</div>
+
+<!-- GALLERY DETAIL MODAL -->
+<div id="galleryModal" class="modal-overlay" role="dialog" aria-modal="true">
+  <div class="modal-box gallery-modal-box">
+    <button class="modal-close" id="galleryModalClose" aria-label="Close"><i class="fas fa-times"></i></button>
+    <div class="gm-img-wrap">
+      <img id="gmImg" src="" alt="" style="width:100%;height:260px;object-fit:cover;border-radius:12px;display:block;margin-bottom:1.25rem">
+    </div>
+    <div style="display:flex;align-items:center;gap:.6rem;margin-bottom:.75rem;flex-wrap:wrap">
+      <span class="gm-cat-badge" id="gmCategory"></span>
+      <span class="gm-date-badge"><i class="fas fa-calendar" style="color:var(--purple-light);margin-right:.3rem"></i><span id="gmDate"></span></span>
+    </div>
+    <h3 id="gmTitle" style="font-size:1.1rem;font-weight:700;margin-bottom:.75rem;line-height:1.4"></h3>
+    <div class="abstract-modal-divider"></div>
+    <p id="gmDesc" style="color:var(--text-muted);font-size:.9rem;line-height:1.85;margin-top:.75rem"></p>
+    <div style="margin-top:1.5rem;text-align:center">
+      <button onclick="document.getElementById('galleryModal').classList.remove('open');document.body.style.overflow='';document.body.classList.remove('modal-open')" class="btn-ghost" style="padding:.5rem 1.5rem;font-size:.85rem">Close</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

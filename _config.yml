@@ -1,0 +1,8 @@
+# GitHub Pages configuration for ARI website
+# If you use a custom domain (e.g. ari-bd.org), add it below and
+# create a CNAME file in the repo root containing just that domain name.
+# If you use the default GitHub Pages URL (username.github.io/repo-name),
+# uncomment the baseurl line below and set it to your repo name.
+
+# baseurl: "/your-repo-name"   # ← uncomment & set if NOT using a custom domain
+url: ""
