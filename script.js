@@ -293,8 +293,6 @@ function getPageFromPath(path) {
   }
   return 'home';
 }
-  return 'home';
-}
 
 function navigateTo(pageId, pushHistory = true) {
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
